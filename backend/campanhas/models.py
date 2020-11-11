@@ -8,7 +8,11 @@ class TbCampanha(models.Model):
     desc_campanha = models.TextField(max_length=1400, blank=False)
     dt_inicio_campanha = models.DateField(blank=False)
     dt_fim_campanha = models.DateField()
-    link_campanha = models.URLField(blank=False)
+    rua_campanha = models.CharField(max_length=100)
+    numero_endereco_campanha = models.CharField(max_length=10)
+    bairro_campanha = models.CharField(max_length=100)
+    cidade_campanha = models.CharField(max_length=100)
+    link_campanha = models.URLField()
 
     pessoa = models.ForeignKey(
         'pessoas.TbPessoa',
@@ -22,6 +26,7 @@ class TbCampanha(models.Model):
     class Meta:
         verbose_name = 'Campanha'
         verbose_name_plural = 'Campanhas'
+
 
 
 
