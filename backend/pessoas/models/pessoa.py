@@ -8,9 +8,17 @@ class TbPessoa(models.Model):
     nasc_pessoa = models.DateField()
     email_pessoa = models.EmailField(blank=False)
 
+    fone = models.ForeignKey(
+        'pessoas.TbFone',
+        related_name='pessoas',
+        on_delete=models.CASCADE,
+    )
+
     def __str__(self):
         return self.nome_pessoa
 
     class Meta:
         verbose_name = 'Pessoa'
         verbose_name_plural = 'Pessoas'
+
+
