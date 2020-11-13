@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'phonenumber_field',
     'campanhas',
     'pessoas',
+    'voluntariado',
 ]
 
 MIDDLEWARE = [
