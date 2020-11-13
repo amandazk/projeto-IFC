@@ -8,10 +8,9 @@ class TbPessoa(models.Model):
     nasc_pessoa = models.DateField()
     email_pessoa = models.EmailField(blank=False)
 
-    fone = models.ForeignKey(
+    fone = models.ManyToManyField(
         'pessoas.TbFone',
-        related_name='pessoas',
-        on_delete=models.CASCADE,
+        related_name='pessoas'
     )
 
     def __str__(self):
