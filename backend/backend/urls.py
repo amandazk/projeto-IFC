@@ -23,5 +23,7 @@ urlpatterns = [
     path('api/', include('pessoas.urls')),
     path('api/', include('voluntariado.urls')),
     path('api/', include('demanda.urls')),
-    path('api/', include('oferta.urls'))
+    path('api/', include('oferta.urls')),
+    path('api/', include('servico.urls')),
+    path('api/', include('noticia.urls'))
 ]
