@@ -8,6 +8,7 @@ class TbServico(models.Model):
 
     def _str_(self):
         return self.titulo_servico
+        
     class Meta:
         verbose_name = 'Serviço'
         verbose_name_plural = 'Serviços'
