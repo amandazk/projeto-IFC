@@ -8,14 +8,9 @@ class TbVoluntariado (models.Model):
 
     pessoa = models.ForeignKey(
         'pessoas.TbPessoa',
-        related_name='voluntariado',
+        related_name='voluntariados',
         on_delete = models.CASCADE 
     )
-
-    # servico = models.ManyToManyField (
-    #     'servicos.TbServico',
-    #     related_name='voluntariado'
-    # )
     
     def __str__(self):
         return self.titulo_voluntariado

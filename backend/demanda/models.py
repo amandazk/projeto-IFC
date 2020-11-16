@@ -11,11 +11,6 @@ class TbDemanda(models.Model):
     cidade_servico = models.CharField(max_length=100)
     desc_demanda = models.TextField(max_length=1400, blank=False)
 
-    # servico = models.ForeignKey(
-    #     'servico.TbServico',
-    #     related_name='demanda',
-    #     on_delete=models.CASCADE,
-    # )
 
     pessoas = models.ForeignKey(
         'pessoas.TbPessoa',
