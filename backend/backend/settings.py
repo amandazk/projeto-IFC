@@ -43,6 +43,9 @@ INSTALLED_APPS = [
     'pessoas',
     'voluntariado',
     'demanda',
+    'noticia',
+    'oferta',
+    'servico',
 ]
 
 MIDDLEWARE = [
