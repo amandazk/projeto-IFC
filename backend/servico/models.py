@@ -20,8 +20,6 @@ class TbServico(models.Model):
         'voluntariado.TbVoluntariado',
         related_name='voluntariados'
     )
-    
-    
 
     def _str_(self):
         return self.titulo_servico
