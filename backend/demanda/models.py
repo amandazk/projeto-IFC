@@ -1,10 +1,12 @@
 from django.db import models
+from django.contrib.gis.db import models
 
 class TbDemanda(models.Model):
     objects = models.Manager() #evitar erro no vscode
     demanda_id =  models.AutoField(primary_key=True)
     titulo_demanda = models.CharField(max_length=100, blank=False)
     data_demanda = models.DateField()
+    local = models.PointField(null=True)
     rua_servico = models.CharField(max_length=100)
     numero_endereco_servico = models.CharField(max_length=10)
     bairro_servico = models.CharField(max_length=100)
