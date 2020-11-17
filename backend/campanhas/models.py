@@ -8,10 +8,10 @@ class TbCampanha(models.Model):
     desc_campanha = models.TextField(max_length=1400, blank=False)
     dt_inicio_campanha = models.DateField(blank=False)
     dt_fim_campanha = models.DateField()
-    rua_campanha = models.CharField(max_length=100)
-    numero_endereco_campanha = models.CharField(max_length=10)
-    bairro_campanha = models.CharField(max_length=100)
-    cidade_campanha = models.CharField(max_length=100)
+    rua_campanha = models.CharField(max_length=100, blank=True, null=True)
+    numero_endereco_campanha = models.CharField(max_length=10, blank=True, null=True)
+    bairro_campanha = models.CharField(max_length=100, blank=True, null=True)
+    cidade_campanha = models.CharField(max_length=100, blank=True, null=True)
     link_campanha = models.URLField()
 
     pessoa = models.ForeignKey(

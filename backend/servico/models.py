@@ -11,11 +11,6 @@ class TbServico(models.Model):
         related_name='servicos'
     )
     
-    demanda = models.ManyToManyField(
-        'demanda.TbDemanda',
-        related_name='demandas'
-    )
-    
     voluntariado = models.ManyToManyField(
         'voluntariado.TbVoluntariado',
         related_name='voluntariados'
