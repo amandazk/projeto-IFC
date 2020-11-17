@@ -20,9 +20,9 @@ class TbDemanda(models.Model):
         on_delete=models.CASCADE,
     )
 
-    demanda = models.ManyToManyField(
-        'demanda.TbDemanda',
-        related_name='demandas'
+    servico = models.ManyToManyField(
+        'servico.TbServico',
+        related_name='demanda'
     )
 
     def __unicode__(self):
