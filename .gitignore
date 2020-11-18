@@ -3,3 +3,5 @@
 env/
 venv/
 #backend/backend/settings.py
+.nvenv
+nvenv/
