@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+export NODE_PATH='/home/amandazk/Documentos/projeto-portal/nvenv/lib/node_modules'
+export NPM_CONFIG_PREFIX='/home/amandazk/Documentos/projeto-portal/nvenv'
+export npm_config_prefix='/home/amandazk/Documentos/projeto-portal/nvenv'
+exec 'nvenv/bin/node' "$@"
