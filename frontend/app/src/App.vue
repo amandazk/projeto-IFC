@@ -1,15 +1,14 @@
 <template>
-  <dir id="app">
+  <div id="app">
     <h1>Lista</h1>
-    <button @click="getPessoas">Buscar dados</button>
+    <button @click="getCampanha">Buscar dados</button>
     <hr />
-    <input v-model="newPessoa" type="text" />
     <ul>
-      <li v-for="pessoa in pessoas" :key="pessoa.pessoa.id">
-        {{ pessoa.nome }}
+      <li v-for="campanha in campanhas" :key="campanha.campanha_id">
+        {{ campanha.titulo_campanha }}
       </li>
     </ul>
-  </dir>
+  </div>
 </template>
 
 <script>
@@ -18,14 +17,15 @@ import axios from "axios";
 export default {
   data() {
     return {
-      newPessoa: "",
-      pessoas: [],
+      newCampanha: "",
+      campanhas: [],
     };
   },
   methods: {
-  getPessoas(){
-    axios.get('http://localhost:8000/api/pessoas').then((res) => {
-      console.log(res.data)
+  getCampanha(){
+    axios.get('http://localhost:8000/api/campanhas').then((res) => {
+      // console.log(res.data)
+      this.campanhas = res.data
     })
   }
   }
