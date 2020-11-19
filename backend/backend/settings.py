@@ -93,8 +93,9 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.contrib.gis.db.backends.postgis',
-        'NAME': 'projeto',
+        # 'ENGINE': 'django.contrib.gis.db.backends.postgis',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'projeto_semgis',
         'USER': 'postgres',
         'PASSWORD': 'pgadminaz123',
         'HOST': 'localhost',
