@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'rest_framework',
     'phonenumber_field',
-    'django.contrib.gis',
+    #'django.contrib.gis',
     'campanhas',
     'pessoas',
     'voluntariado',
