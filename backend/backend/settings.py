@@ -95,9 +95,9 @@ DATABASES = {
     'default': {
         # 'ENGINE': 'django.contrib.gis.db.backends.postgis',
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'projeto_semgis',
+        'NAME': 'projeto',
         'USER': 'postgres',
-        'PASSWORD': 'pgadminaz123',
+        'PASSWORD': 'root',
         'HOST': 'localhost',
         'PORT': '5432'
     }
