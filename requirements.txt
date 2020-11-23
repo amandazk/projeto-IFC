@@ -31,11 +31,11 @@ nodeenv==1.5.0
 oauthlib==3.1.0
 phonenumbers==8.12.12
 Pillow==8.0.1
-psycopg2==2.8.6
+pkg-resources==0.0.0
+psycopg2-binary==2.8.6
 pycodestyle==2.6.0
 pycparser==2.20
 PyJWT==1.7.1
-pylint==2.6.0
 python-dateutil==2.8.1
 python3-openid==3.2.0
 pytz==2020.4
@@ -48,6 +48,5 @@ sqlparse==0.4.1
 toml==0.10.2
 uritemplate==3.0.1
 urllib3==1.26.2
-validate-docbr==1.8.2
 Werkzeug==1.0.1
 wrapt==1.12.1
