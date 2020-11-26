@@ -46,9 +46,10 @@ export default {
 <style>
 .footer-bs {
   background-color: rgba(181, 205, 172, 100);
-	padding: 60px 40px;
+	padding: 10px 40px;
 	color: rgba(71,82,94,100);
-	margin-bottom: 20px;
+    margin-top: 100px;
+	margin-bottom: 0px;
 	border-bottom-right-radius: 6px;
 	border-top-left-radius: 0px;
 	border-bottom-left-radius: 6px;
