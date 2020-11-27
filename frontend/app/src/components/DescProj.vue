@@ -26,8 +26,10 @@
 
 <script>
 
-import NavBar from "./components/NavBar.vue"
-import Footer from "./components/Footer.vue"
+import NavBar from "./NavBar"
+import Footer from "./Footer"
+// import axios from "axios";
+// import router from "@/router/"
 
 export default {
   name: 'DescProj',
@@ -35,6 +37,5 @@ export default {
     NavBar: NavBar,
     Footer: Footer
     }
-  }
-
+}
 </script>
