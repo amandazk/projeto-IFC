@@ -5,13 +5,13 @@
       <router-view></router-view>
     </v-content>
   </v-app>
-
+ 
   <div> <a> aaaaaa </a> </div>
   <div> <a> aaaaaa </a> </div>
   <div> <a> aaaaaa </a> </div>
   <div> <a> aaaaaa </a> </div>
-
-
+ 
+ 
 <div class="container">
     <!-- Example row of columns -->
     <div class="row">
@@ -32,22 +32,22 @@
       </div>
     </div>
   </div>
-
+ 
  <v-app id="">
     <Footer ref="drawer"></Footer>
     <v-content>
       <router-view></router-view>
     </v-content>
   </v-app>
-
-
+ 
+ 
 </template>
-
+ 
 <script>
-
+ 
 import NavBar from "./components/NavBar.vue"
 import Footer from "./components/Footer.vue"
-
+ 
 export default {
   name: 'App',
   components: {
@@ -55,6 +55,5 @@ export default {
     Footer: Footer
     }
   }
-
+ 
 </script>
-

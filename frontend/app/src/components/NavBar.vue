@@ -1,11 +1,11 @@
 <template>
-
+ 
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-success">
-
+ 
   <div class="collapse navbar-collapse" id="navbarsExampleDefault">
     <ul class="navbar-nav mr-auto">
       <a class="navbar-brand" href="#">
-    <img src="../assets/pequno.png" width="160" height="40" class="d-inline-block align-top" alt="">
+    <img src="../assets/logo.png" width="160" height="40" class="d-inline-block align-top" alt="">
       </a>
       <li class="nav-item active">
         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -33,7 +33,7 @@
 </nav>
   
 </template>
-
+ 
 <script>
 export default {
     name: "NavBar"
