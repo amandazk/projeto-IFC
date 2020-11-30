@@ -8,13 +8,13 @@
     <img src="../assets/logo.png" width="160" height="40" class="d-inline-block align-top" alt="">
       </a>
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Notícias</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Campanhas</a>
+        <a class="nav-link" href="/campanhas">Campanhas</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Serviços</a>
