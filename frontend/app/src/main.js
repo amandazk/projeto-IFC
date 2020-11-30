@@ -1,10 +1,12 @@
+  
 //import { createApp } from 'vue'
 import App from './App.vue'
 //import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap-vue/dist/bootstrap-vue.css'
+// import 'bootstrap-vue/dist/bootstrap-vue.css'
 import VueRouter from 'vue-router'
 import Vue from 'vue'
+import router from './router/index'
 // import DescProj from './components/DescProj.vue'
 
 
@@ -27,6 +29,6 @@ import Vue from 'vue'
 Vue.use(VueRouter);
 
 new Vue({
-    // router,
+    router,
     render: h => h(App,)
 }).$mount('#app')
