@@ -31,7 +31,6 @@ import NavBar from "./NavBar";
 import Footer from "./Footer";
 // import axios from "axios";
 // import router from "@/router/"
-
 export default {
   name: "DescProj",
   components: {
@@ -40,4 +39,3 @@ export default {
   },
 };
 </script>
- 

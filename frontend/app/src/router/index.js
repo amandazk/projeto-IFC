@@ -2,8 +2,8 @@ import Vue from 'vue'
 import VueRouter from 'vue-router';
 
 import DescProj from '../components/DescProj.vue'
-import App from '../App.vue'
 import CampanhaList from '../components/Campanha/List.vue'
+import Index from '../components/Index.vue'
 
 Vue.use(VueRouter)
 
@@ -12,8 +12,8 @@ export default new VueRouter({
   hash: false,
   routes: [{
       path: '/',
-      name: 'App',
-      component: App
+      name: 'Index',
+      component: Index
     },
     {
       path: '/descricao',
@@ -25,6 +25,7 @@ export default new VueRouter({
       name: 'CampanhaList',
       component: CampanhaList
     },
+
 
 
   ]})
