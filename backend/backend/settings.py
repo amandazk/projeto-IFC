@@ -95,9 +95,9 @@ DATABASES = {
     'default': {
         # 'ENGINE': 'django.contrib.gis.db.backends.postgis',
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'projeto-portal',
+        'NAME': 'projeto',
         'USER': 'postgres',
-        'PASSWORD': 'pietro12',
+        'PASSWORD': 'root',
         'HOST': 'localhost',
         'PORT': '5432'
     }
