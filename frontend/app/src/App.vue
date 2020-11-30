@@ -1,59 +1,92 @@
 <template>
- <v-app id="">
-    <NavBar ref="drawer"></NavBar>
-    <v-content>
-      <router-view></router-view>
-    </v-content>
-  </v-app>
- 
-  <div> <a> aaaaaa </a> </div>
-  <div> <a> aaaaaa </a> </div>
-  <div> <a> aaaaaa </a> </div>
-  <div> <a> aaaaaa </a> </div>
- 
- 
-<div class="container">
-    <!-- Example row of columns -->
-    <div class="row">
-      <div class="col-md-4">
-        <h2>Descrição do projeto</h2>
-        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-        <p><a class="btn btn-secondary p-2 mb-2 bg-success text-white" href="./DescProj.vue" role="button">View details &raquo;</a></p>
-      </div>
-      <div class="col-md-4">
-        <h2>Como funciona</h2>
-        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-        <p><a class="btn btn-secondary p-2 mb-2 bg-success text-white" href="#" role="button">View details &raquo;</a></p>
-      </div>
-      <div class="col-md-4">
-        <h2>Outra informação</h2>
-        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        <p><a class="btn btn-secondary p-2 mb-2 bg-success text-white" href="#" role="button">View details &raquo;</a></p>
+  <div>
+    <v-app id="">
+      <NavBar ref="drawer"></NavBar>
+      <v-content>
+        <router-view></router-view>
+      </v-content>
+    </v-app>
+
+    <div><a> aaaaaa </a></div>
+    <div><a> aaaaaa </a></div>
+    <div><a> aaaaaa </a></div>
+    <div><a> aaaaaa </a></div>
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Descrição do projeto</h2>
+          <p>
+            Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
+            tellus ac cursus commodo, tortor mauris condimentum nibh, ut
+            fermentum massa justo sit amet risus. Etiam porta sem malesuada
+            magna mollis euismod. Donec sed odio dui.
+          </p>
+          <p>
+            <a
+              class="btn btn-secondary p-2 mb-2 bg-success text-white"
+              href="./DescProj.vue"
+              role="button"
+              >View details &raquo;</a
+            >
+          </p>
+        </div>
+        <div class="col-md-4">
+          <h2>Como funciona</h2>
+          <p>
+            Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
+            tellus ac cursus commodo, tortor mauris condimentum nibh, ut
+            fermentum massa justo sit amet risus. Etiam porta sem malesuada
+            magna mollis euismod. Donec sed odio dui.
+          </p>
+          <p>
+            <a
+              class="btn btn-secondary p-2 mb-2 bg-success text-white"
+              href="#"
+              role="button"
+              >View details &raquo;</a
+            >
+          </p>
+        </div>
+        <div class="col-md-4">
+          <h2>Outra informação</h2>
+          <p>
+            Donec sed odio dui. Cras justo odio, dapibus ac facilisis in,
+            egestas eget quam. Vestibulum id ligula porta felis euismod semper.
+            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
+            nibh, ut fermentum massa justo sit amet risus.
+          </p>
+          <p>
+            <a
+              class="btn btn-secondary p-2 mb-2 bg-success text-white"
+              href="#"
+              role="button"
+              >View details &raquo;</a
+            >
+          </p>
+        </div>
       </div>
     </div>
+
+    <v-app id="">
+      <Footer ref="drawer"></Footer>
+      <v-content>
+        <router-view></router-view>
+      </v-content>
+    </v-app>
   </div>
- 
- <v-app id="">
-    <Footer ref="drawer"></Footer>
-    <v-content>
-      <router-view></router-view>
-    </v-content>
-  </v-app>
- 
- 
 </template>
  
 <script>
- 
-import NavBar from "./components/NavBar.vue"
-import Footer from "./components/Footer.vue"
- 
+import NavBar from "./components/NavBar.vue";
+import Footer from "./components/Footer.vue";
+
 export default {
-  name: 'App',
+  name: "App",
   components: {
     NavBar: NavBar,
-    Footer: Footer
-    }
-  }
- 
+    Footer: Footer,
+  },
+};
 </script>
