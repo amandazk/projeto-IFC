@@ -16,7 +16,7 @@ export default new VueRouter({
       component: Index
     },
     {
-      path: '/descricao',
+      path: '/descricao-projeto',
       name: 'DescProj',
       component: DescProj
     },
