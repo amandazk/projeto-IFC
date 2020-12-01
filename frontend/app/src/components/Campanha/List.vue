@@ -27,7 +27,7 @@ export default {
   methods: {
     getCampanha() {
       axios.get("http://localhost:8000/api/campanhas").then((res) => {
-        console.log(res.data);
+        // console.log(res.data);
         this.campanhas = res.data;
       });
     },
