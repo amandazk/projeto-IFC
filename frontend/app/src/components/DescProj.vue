@@ -1,41 +1,22 @@
 <template>
   <div>
-    <v-app id="">
-      <NavBar ref="drawer"></NavBar>
-      <v-content>
-        <router-view></router-view>
-      </v-content>
-    </v-app>
+      <div><a> aaaaaa </a></div>
+    <div><a> aaaaaa </a></div>
+    <div><a> aaaaaa </a></div>
+    <div><a> aaaaaa </a></div>
 
-    <h1>a</h1>
-    <h1>a</h1>
-
-    <h1>a</h1>
-    <h1>a</h1>
-    <h1>a</h1>
-    <h1>a</h1>
-    <h1>a</h1>
-    <h1>a</h1>
-
-    <v-app id="">
-      <Footer ref="drawer"></Footer>
-      <v-content>
-        <router-view></router-view>
-      </v-content>
-    </v-app>
   </div>
 </template>
  
 <script>
-import NavBar from "./NavBar";
-import Footer from "./Footer";
+//import App from "../App.vue";
 // import axios from "axios";
 // import router from "@/router/"
 export default {
   name: "DescProj",
   components: {
-    NavBar: NavBar,
-    Footer: Footer,
+    //App: App,
+
   },
 };
 </script>
