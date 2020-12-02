@@ -8,6 +8,7 @@ import DemandaList from '../components/Demanda/List.vue'
 import OfertaList from '../components/Oferta/List.vue'
 import PessoaList from '../components/Pessoa/List.vue'
 import ServicoList from '../components/Servico/List.vue'
+import VoluntariadoList from '../components/Voluntariado/List.vue'
 
 Vue.use(VueRouter)
 
@@ -48,6 +49,11 @@ export default new VueRouter({
       path: '/servicos',
       name: 'ServicoList',
       component: ServicoList
+    },
+    {
+      path: '/voluntariados',
+      name: 'VoluntariadoList',
+      component: VoluntariadoList
     },
     
 
