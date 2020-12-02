@@ -2,9 +2,10 @@ import Vue from 'vue'
 import VueRouter from 'vue-router';
 
 import Index from '../components/Index.vue'
-import DescProj from '../components/DescProj.vue'
+import Descricao from '../components/DescProj.vue'
 import CampanhaList from '../components/Campanha/List.vue'
 import DemandaList from '../components/Demanda/List.vue'
+import OfertaList from '../components/Oferta/List.vue'
 
 Vue.use(VueRouter)
 
@@ -17,9 +18,9 @@ export default new VueRouter({
       component: Index
     },
     {
-      path: '/descricao-projeto',
-      name: 'DescProj',
-      component: DescProj
+      path: '/',
+      name: 'Descricao',
+      component: Descricao
     },
     {
       path: '/campanhas',
@@ -30,7 +31,12 @@ export default new VueRouter({
       path: '/demandas',
       name: 'DemandaList',
       component: DemandaList
-    }
+    },
+    {
+      path: '/ofertas',
+      name: 'OfertaList',
+      component: OfertaList
+    },
 
 
 

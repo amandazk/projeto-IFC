@@ -12,7 +12,7 @@
 // import axios from "axios";
 // import router from "@/router/"
 export default {
-  name: "DescProj",
+  name: "Descricao",
   components: {
     //App: App,
   },
