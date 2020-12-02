@@ -6,6 +6,7 @@ import Descricao from '../components/DescProj.vue'
 import CampanhaList from '../components/Campanha/List.vue'
 import DemandaList from '../components/Demanda/List.vue'
 import OfertaList from '../components/Oferta/List.vue'
+import PessoaList from '../components/Pessoa/List.vue'
 
 Vue.use(VueRouter)
 
@@ -36,6 +37,11 @@ export default new VueRouter({
       path: '/ofertas',
       name: 'OfertaList',
       component: OfertaList
+    },
+    {
+      path: '/pessoas',
+      name: 'PessoaList',
+      component: PessoaList
     },
 
 
