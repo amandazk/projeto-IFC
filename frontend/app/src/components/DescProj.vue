@@ -1,9 +1,6 @@
 <template>
   <div>
-    <div><a> aaaaaa </a></div>
-    <div><a> aaaaaa </a></div>
-    <div><a> aaaaaa </a></div>
-    <div><a> aaaaaa </a></div>
+    <a>aaaaa</a>
   </div>
 </template>
  

@@ -21,7 +21,7 @@ export default new VueRouter({
       component: Index
     },
     {
-      path: '/',
+      path: '/descricao',
       name: 'Descricao',
       component: Descricao
     },
