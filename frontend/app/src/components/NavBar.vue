@@ -26,7 +26,7 @@
         <a class="nav-link" href="#">Cadastro</a>
       </li>
       <li class="form-inline my-2 my-lg-0">
-        <a class="btn btn-outline-success my-2 my-sm-0" href="#">Entrar</a>
+        <a class="btn btn-outline-danger my-2 my-sm-0" href="#">Entrar</a>
       </li>
     </ul>
   </div>
@@ -39,3 +39,8 @@ export default {
     name: "NavBar"
 }
 </script>
+
+<style>
+
+
+</style>
