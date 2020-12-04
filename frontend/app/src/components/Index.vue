@@ -7,10 +7,6 @@
       </v-content>
     </v-app>
 
-    <!-- <div><a> aaaaaa </a></div>
-    <div><a> aaaaaa </a></div>
-    <div><a> aaaaaa </a></div>
-    <div><a> aaaaaa </a></div> -->
 
     <div class="container">
       <!-- Example row of columns -->
