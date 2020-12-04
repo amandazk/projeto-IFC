@@ -7,10 +7,10 @@
       </v-content>
     </v-app>
 
+    <!-- <div><a> aaaaaa </a></div>
     <div><a> aaaaaa </a></div>
     <div><a> aaaaaa </a></div>
-    <div><a> aaaaaa </a></div>
-    <div><a> aaaaaa </a></div>
+    <div><a> aaaaaa </a></div> -->
 
     <div class="container">
       <!-- Example row of columns -->
@@ -87,3 +87,9 @@ export default {
 }}
 
 </script>
+
+<style>
+.navbar-default {
+  margin : 0 !important; 
+}
+</style>
