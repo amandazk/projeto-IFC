@@ -9,21 +9,14 @@
                 <p>Suspendisse hendrerit tellus laoreet luctus pharetra. Aliquam porttitor vitae orci nec ultricies. Curabitur vehicula, libero eget faucibus faucibus, purus erat eleifend enim, porta pellentesque ex mi ut sem.</p>
                 <p>© 2020-2020, Todos os direitos reservados.</p>
             </div>
-          <div class="col-md-2 footer-nav animated fadeInUp">
+          <div class="col-md-4 footer-nav animated fadeInUp">
               <h4>Menu</h4>
               <div class="col-md-6">
                     <ul class="list">
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">Iniciativas</a></li>
-                        <li><a href="#">Campanhas</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-3 footer-nav animated fadeInUp">
-              <h4>Mais opções</h4>
-              <div class="col-md-6">
-                    <ul class="list">
                         <li><a href="#">Notícias</a></li>
+                        <li><a href="#">Campanhas</a></li>
+                        <li><a href="#">Iniciativas</a></li>
                         <li><a href="#">Serviços</a></li>
                         <li><a href="#">Sobre nós</a></li>
                     </ul>
@@ -33,6 +26,7 @@
               <h4>Redes sociais do IFC</h4>
               <ul>
                   <li><a href="https://www.facebook.com/ifc.oficial.araquari">Facebook</a></li>
+                  <li><a href="#">Twitter</a></li>
                   <li><a href="https://www.instagram.com/ifc.oficial.araquari/">Instagram</a></li>
                   <li><a href="https://araquari.ifc.edu.br/">Site</a></li>
                 </ul>
