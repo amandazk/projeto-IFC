@@ -10,14 +10,16 @@
     <div class="container">
       <!-- Example row of columns -->
       <div class="row">
-        <div class="col-md-4">
-          <h2>Descrição do projeto</h2>
-          <p>
+        <div class="card bg-light mb-3 col-md-4">
+           <div class="card-body">
+            <h2 class="card-title">Light card title</h2>
+            <p class="card-text">
             Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
             tellus ac cursus commodo, tortor mauris condimentum nibh, ut
             fermentum massa justo sit amet risus. Etiam porta sem malesuada
             magna mollis euismod. Donec sed odio dui.
-          </p>
+            </p>
+           </div>
           <p>
             <a
               class="btn btn-secondary p-2 mb-2 bg-success text-white"
@@ -27,14 +29,16 @@
             >
           </p>
         </div>
-        <div class="col-md-4">
-          <h2>Como funciona</h2>
-          <p>
+        <div class="card bg-light mb-3 col-md-4">
+          <div class="card-body">
+            <h2 class="card-title">Light card title</h2>
+            <p class="card-text">
             Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
             tellus ac cursus commodo, tortor mauris condimentum nibh, ut
             fermentum massa justo sit amet risus. Etiam porta sem malesuada
             magna mollis euismod. Donec sed odio dui.
           </p>
+          </div>
           <p>
             <a
               class="btn btn-secondary p-2 mb-2 bg-success text-white"
@@ -44,14 +48,16 @@
             >
           </p>
         </div>
-        <div class="col-md-4">
-          <h2>Quem pode participar</h2>
-          <p>
+        <div class="card bg-light mb-3 col-md-4">
+          <div class="card-body">
+            <h2 class="card-title">Light card title</h2>
+            <p class="card-text">
             Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
             tellus ac cursus commodo, tortor mauris condimentum nibh, ut
             fermentum massa justo sit amet risus. Etiam porta sem malesuada
             magna mollis euismod. Donec sed odio dui.
           </p>
+          </div>
           <p>
             <a
               class="btn btn-secondary p-2 mb-2 bg-success text-white"
