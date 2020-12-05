@@ -22,7 +22,7 @@
           <p>
             <a
               class="btn btn-secondary p-2 mb-2 bg-success text-white"
-              href="./descricao-projeto"
+              href="./descricao"
               role="button"
               >View details &raquo;</a
             >
