@@ -13,7 +13,7 @@
               <h4>Menu</h4>
               <div class="col-md-6">
                     <ul class="list">
-                        <li><a href="#">Home</a></li>
+                        <li><a href="/">Home</a></li>
                         <li><a href="#">Iniciativas</a></li>
                         <li><a href="#">Campanhas</a></li>
                     </ul>
