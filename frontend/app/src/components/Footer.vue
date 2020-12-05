@@ -61,10 +61,6 @@ export default {
 </script>
  
 <style>
-a {
-  color: rgba(71, 82, 94);
-  text-decoration: underline;
-}
 .footer-bs {
   background-color: #b5cdac;
   padding: 10px 40px;
