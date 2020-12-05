@@ -2,7 +2,6 @@ import Vue from 'vue'
 import VueRouter from 'vue-router';
 
 import Index from '../components/Index.vue'
-import Descricao from '../components/DescProj.vue'
 import InfoProj from '../components/InfoProj.vue'
 import Covid from '../components/Covid.vue'
 import CampanhaList from '../components/Campanha/List.vue'
@@ -22,11 +21,6 @@ export default new VueRouter({
       path: '/',
       name: 'Index',
       component: Index
-    },
-    {
-      path: '/descricao',
-      name: 'Descricao',
-      component: Descricao
     },
     {
       path: '/informacao-projeto',

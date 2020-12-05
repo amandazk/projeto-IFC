@@ -7,7 +7,6 @@
       </v-content>
     </v-app>
 
-
     <div class="container">
       <!-- Example row of columns -->
       <div class="row">
@@ -62,6 +61,31 @@
       </div>
     </div>
 
+    <div class="t1">
+      <h2> DESCRIÇÃO DO PROJETO </h2>
+    </div>
+    <div class="alt">
+      <a> O Brasil é a sétima nação mais desigual do mundo atualmente e com <br>
+        a questão da COVID-19 e o isolamento social, a desigualdade cresce <br>
+        cada vez mais. A proposta deste projeto é a disponibilização do Portal <br>
+        da Solidariedade, um ambiente web com a função de dar visibilidade <br>
+        a estas pessoas.
+        <br>
+        <br>
+
+        O projeto pretende oferecer espaço para que esta população possa ser <br>
+        enxergada, possa disponibilizar suas qualificações, seus saberes, <br>
+        apresentar seus produtos e serviços e, desta forma, conseguir ampliar <br>
+        as suas possibilidades de serem incluídos nos processos de proteção <br>
+        e também de recuperação dos efeitos da pandemia que, seguramente, <br>
+        ainda vão se refletir por vários meses. Também as ações de solidariedade <br>
+        que aos poucos vão acontecendo nas cidades poderão ser hospedadas <br>
+        neste portal. Este conjunto de esforços, todos concentrados em um local, <br>
+        permitindo a ampliação do suporte para os excluídos deste
+        nosso país.
+      </a>
+    </div>
+
     <v-app id="">
       <Footer ref="drawer"></Footer>
       <v-content>
@@ -89,4 +113,17 @@ export default {
 .container{
   margin-top: 70px;
 }
+
+.alt{
+  margin-top: 50px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 19px;
+}
+
+.t1{
+  margin-top: 25px;
+  text-align: center;
+}
+
 </style>
