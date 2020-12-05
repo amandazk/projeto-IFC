@@ -14,17 +14,16 @@
         <div class="col-md-4">
           <h2>Descrição do projeto</h2>
           <p>
-            Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
-            tellus ac cursus commodo, tortor mauris condimentum nibh, ut
-            fermentum massa justo sit amet risus. Etiam porta sem malesuada
-            magna mollis euismod. Donec sed odio dui.
+            A proposta deste projeto é a disponibilização do Portal 
+            da Solidariedade, um ambiente web com a função de dar visibilidade 
+            a estas pessoas.
           </p>
           <p>
             <a
               class="btn btn-secondary p-2 mb-2 bg-success text-white"
               href="./descricao"
               role="button"
-              >View details &raquo;</a
+              >Saiba mais &raquo;</a
             >
           </p>
         </div>
@@ -41,24 +40,22 @@
               class="btn btn-secondary p-2 mb-2 bg-success text-white"
               href="#"
               role="button"
-              >View details &raquo;</a
+              >Saiba mais &raquo;</a
             >
           </p>
         </div>
         <div class="col-md-4">
-          <h2>Outra informação</h2>
+          <h2>Cuidados na Pandemia</h2>
           <p>
-            Donec sed odio dui. Cras justo odio, dapibus ac facilisis in,
-            egestas eget quam. Vestibulum id ligula porta felis euismod semper.
-            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
-            nibh, ut fermentum massa justo sit amet risus.
+            É importante nos previrmos durante a pandemia que acontece, por isso
+            criamos essa área para informar quais cuidados devemos ter.
           </p>
           <p>
             <a
               class="btn btn-secondary p-2 mb-2 bg-success text-white"
               href="#"
               role="button"
-              >View details &raquo;</a
+              >Saiba mais &raquo;</a
             >
           </p>
         </div>
@@ -87,5 +84,9 @@ export default {
 <style>
 .navbar-default {
   margin : 0 !important; 
+}
+
+.container{
+  margin-top: 70px;
 }
 </style>
