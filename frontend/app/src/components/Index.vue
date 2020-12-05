@@ -7,16 +7,16 @@
       </v-content>
     </v-app>
 
-
     <div class="container">
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-md-4">
           <h2>Descrição do projeto</h2>
           <p>
-            A proposta deste projeto é a disponibilização do Portal 
-            da Solidariedade, um ambiente web com a função de dar visibilidade 
-            a estas pessoas.
+            Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
+            tellus ac cursus commodo, tortor mauris condimentum nibh, ut
+            fermentum massa justo sit amet risus. Etiam porta sem malesuada
+            magna mollis euismod. Donec sed odio dui.
           </p>
           <p>
             <a
@@ -45,10 +45,12 @@
           </p>
         </div>
         <div class="col-md-4">
-          <h2>Cuidados na Pandemia</h2>
+          <h2>Quem pode participar</h2>
           <p>
-            É importante nos previrmos durante a pandemia que acontece, por isso
-            criamos essa área para informar quais cuidados devemos ter.
+            Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
+            tellus ac cursus commodo, tortor mauris condimentum nibh, ut
+            fermentum massa justo sit amet risus. Etiam porta sem malesuada
+            magna mollis euismod. Donec sed odio dui.
           </p>
           <p>
             <a
@@ -75,18 +77,16 @@
 //import router from "../router/index.js";
 export default {
   name: "Index",
-  data() {
-    
-}}
-
+  data() {},
+};
 </script>
 
 <style>
 .navbar-default {
-  margin : 0 !important; 
+  margin: 0 !important;
 }
 
-.container{
+.container {
   margin-top: 70px;
 }
 </style>

@@ -1,6 +1,8 @@
 <template>
   <div>
     <div class="alt">
+      <h1>Projeto Portal da Solidariedade</h1>
+      <br>
       <a> O Brasil é a sétima nação mais desigual do mundo atualmente e com <br>
         a questão da COVID-19 e o isolamento social, a desigualdade cresce <br>
         cada vez mais. A proposta deste projeto é a disponibilização do Portal <br>
@@ -19,6 +21,7 @@
         neste portal. Este conjunto de esforços, todos concentrados em um local, <br>
         permitindo a ampliação do suporte para os excluídos deste
         nosso país.
+     
       </a>
 
     </div>
@@ -41,5 +44,6 @@ export default {
   margin-left: 70px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 21px;
+  text-align: center;
 }
 </style>
