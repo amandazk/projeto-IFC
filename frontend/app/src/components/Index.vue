@@ -28,7 +28,7 @@
           </p>
         </div>
         <div class="col-md-4">
-          <h2>Como funciona</h2>
+          <h2>Como se cadastrar</h2>
           <p>
             Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
             tellus ac cursus commodo, tortor mauris condimentum nibh, ut
@@ -38,7 +38,7 @@
           <p>
             <a
               class="btn btn-secondary p-2 mb-2 bg-success text-white"
-              href="#"
+              href="/informacao-projeto"
               role="button"
               >Saiba mais &raquo;</a
             >
@@ -53,7 +53,7 @@
           <p>
             <a
               class="btn btn-secondary p-2 mb-2 bg-success text-white"
-              href="#"
+              href="/cuidados-covid"
               role="button"
               >Saiba mais &raquo;</a
             >

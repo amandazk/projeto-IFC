@@ -3,12 +3,15 @@ import VueRouter from 'vue-router';
 
 import Index from '../components/Index.vue'
 import Descricao from '../components/DescProj.vue'
+import InfoProj from '../components/InfoProj.vue'
+import Covid from '../components/Covid.vue'
 import CampanhaList from '../components/Campanha/List.vue'
 import DemandaList from '../components/Demanda/List.vue'
 import OfertaList from '../components/Oferta/List.vue'
 import PessoaList from '../components/Pessoa/List.vue'
 import ServicoList from '../components/Servico/List.vue'
 import VoluntariadoList from '../components/Voluntariado/List.vue'
+//import { component } from 'vue/types/umd';
 
 Vue.use(VueRouter)
 
@@ -24,6 +27,16 @@ export default new VueRouter({
       path: '/descricao',
       name: 'Descricao',
       component: Descricao
+    },
+    {
+      path: '/informacao-projeto',
+      name: 'InfoProj',
+      component: InfoProj
+    },
+    {
+      path: '/cuidados-covid',
+      name: 'Covid',
+      component: Covid
     },
     {
       path: '/campanhas',
