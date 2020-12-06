@@ -17,7 +17,7 @@
                 </p>
                 <p>
                   <a
-                    class="btn btn-secondary p-2 mb-2 bg-success text-white"
+                    class="btn btn-secondary p-2 mb-2"
                     href="/cuidados-covid"
                     role="button"
                     >Saiba mais &raquo;</a
@@ -44,7 +44,7 @@
                 </p>
                 <p>
                   <a
-                    class="btn btn-secondary p-2 mb-2 bg-success text-white"
+                    class="btn btn-secondary p-2 mb-2"
                     href="/cuidados-covid"
                     role="button"
                     >Saiba mais &raquo;</a
@@ -71,7 +71,7 @@
                 </p>
                 <p>
                   <a
-                    class="btn btn-secondary p-2 mb-2 bg-success text-white"
+                    class="btn btn-secondary p-2 mb-2"
                     href="/cuidados-covid"
                     role="button"
                     >Saiba mais &raquo;</a
@@ -85,7 +85,7 @@
     </div>
     <div class="row d-flex justify-content-center">
       <div class="col-lg-12 col-sm-12 mb-4 text-center">
-        <h1 class="t1">Descrição do Projeto</h1>
+        <h1 class="t1">Portal da Solidariedade</h1>
         <p class="texto">
           O Brasil é a sétima nação mais desigual do mundo atualmente e com
           <br />
@@ -98,23 +98,23 @@
           a estas pessoas.
           <br />
           <br />
-          O projeto pretende oferecer espaço para que esta população possa ser
+          O projeto pretende oferecer espaço para que esta população em <br />
+          vulnerabilidade social possa ser enxergada, possa disponibilizar
           <br />
-          enxergada, possa disponibilizar suas qualificações, seus saberes,
-          <br />
-          apresentar seus produtos e serviços e, desta forma, conseguir ampliar
-          <br />
-          as suas possibilidades de serem incluídos nos processos de proteção
-          <br />
-          e também de recuperação dos efeitos da pandemia que, seguramente,
-          <br />
-          ainda vão se refletir por vários meses. Também as ações de
-          solidariedade <br />
-          que aos poucos vão acontecendo nas cidades poderão ser hospedadas
-          <br />
-          neste portal. Este conjunto de esforços, todos concentrados em um
-          local, <br />
-          permitindo a ampliação do suporte para os excluídos deste nosso país.
+          suas qualificações, seus saberes, apresentar seus produtos e serviços
+          e,<br />
+          desta forma, conseguir ampliar as suas possibilidades de serem
+          incluídos nos<br />
+          processos de proteção e também de recuperação dos efeitos da pandemia
+          que,<br />
+          seguramente, ainda vão se refletir por vários meses. Também as ações
+          de<br />
+          solidariedade que aos poucos vão acontecendo nas cidades poderão
+          ser<br />
+          hospedadas neste portal. Este conjunto de esforços, todos concentrados
+          em<br />
+          um local, permitindo a ampliação do suporte para os excluídos deste
+          nosso país.<br />
         </p>
       </div>
     </div>
