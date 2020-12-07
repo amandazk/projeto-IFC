@@ -3,13 +3,13 @@
     <!----------- Footer ------------>
     <footer class="footer-bs">
       <div class="row">
-        <div class="col-md-3 footer-brand animated fadeInLeft">
+        <div class="col-md-3 footer-brand animated fadeInLeft" style="margin-top:20px">
           <p>
             O portal foi desenvolvido por alunos do Instituto Federal
-            Catarinense <br />
-            do Campus Araquari. O código do projeto pode ser encontrado em:
+            Catarinense do Campus Araquari. <br />
+            O código do projeto pode ser encontrado em:
             <br />
-            <a href="https://github.com/amandazk/projeto-IFC">Github Portal</a>
+            <a style="color: rgba(71, 82, 94, 100)" href="https://github.com/amandazk/projeto-IFC">Github Portal</a>
           </p>
           <p>© 2020-2020, Todos os direitos reservados.</p>
         </div>
@@ -46,7 +46,7 @@
                 >Instagram</a
               >
             </li>
-            <li><a href="https://araquari.ifc.edu.br/">Site</a></li>
+            <li><a href="https://araquari.ifc.edu.br/">Site IFC</a></li>
           </ul>
         </div>
       </div>
@@ -62,7 +62,7 @@ export default {
  
 <style>
 .footer-bs {
-  background-color: #b5cdac;
+  background-color: #9BB694;
   padding: 10px 40px;
   color: rgba(71, 82, 94, 100);
   margin-top: 100px;

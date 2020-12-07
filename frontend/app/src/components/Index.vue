@@ -31,16 +31,14 @@
       <div class="col-lg-4 col-sm-10 mb-4 text-center">
         <div class="card mb-4 shadow-sm">
           <div class="card-header">
-            <h4 class="my-0 font-weight-normal" id="title">Card text</h4>
+            <h4 class="my-0 font-weight-normal" id="title">Como se cadastrar</h4>
           </div>
           <div class="card-body">
             <ul class="list-unstyled mt-3 mb-4">
               <li>
                 <p id="text-card">
-                  Donec id elit non mi porta gravida at eget metus. Fusce
-                  dapibus, tellus ac cursus commodo, tortor mauris condimentum
-                  nibh, ut fermentum massa justo sit amet risus. Etiam porta sem
-                  malesuada magna mollis euismod. Donec sed odio dui
+                  Para efetuar o cadastro em nosso site é simples, basta clicar no botão ''Saiba mais''
+                  e você vai entender qual cadastro deve realizar e quais suas finalidades.
                 </p>
                 <p>
                   <a
@@ -58,16 +56,14 @@
       <div class="col-lg-4 col-sm-10 mb-4 text-center">
         <div class="card mb-4 shadow-sm">
           <div class="card-header">
-            <h4 class="my-0 font-weight-normal" id="title">Card text</h4>
+            <h4 class="my-0 font-weight-normal" id="title">Cuidados na pandemia</h4>
           </div>
           <div class="card-body">
             <ul class="list-unstyled mt-3 mb-4">
               <li>
                 <p id="text-card">
-                  Donec id elit non mi porta gravida at eget metus. Fusce
-                  dapibus, tellus ac cursus commodo, tortor mauris condimentum
-                  nibh, ut fermentum massa justo sit amet risus. Etiam porta sem
-                  malesuada magna mollis euismod. Donec sed odio dui
+                  Durante essa época difícil que estamos passando é importante estarmos sempre 
+                  prevenidos. Para isso, criamos essa área para você saber como se cuidar.
                 </p>
                 <p>
                   <a
