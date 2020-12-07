@@ -10,6 +10,7 @@ import OfertaList from '../components/Oferta/List.vue'
 import PessoaList from '../components/Pessoa/List.vue'
 import ServicoList from '../components/Servico/List.vue'
 import VoluntariadoList from '../components/Voluntariado/List.vue'
+import Cadastro from '../components/Cadastro/Cadastro.vue'
 //import { component } from 'vue/types/umd';
 
 Vue.use(VueRouter)
@@ -61,6 +62,11 @@ export default new VueRouter({
       path: '/voluntariados',
       name: 'VoluntariadoList',
       component: VoluntariadoList
+    },
+    {
+      path: '/cadastro',
+      name: Cadastro,
+      component: Cadastro
     },
     
 
