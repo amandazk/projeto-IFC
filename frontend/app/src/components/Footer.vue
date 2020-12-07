@@ -3,7 +3,7 @@
     <!----------- Footer ------------>
     <footer class="footer-bs">
       <div class="row">
-        <div class="col-md-3 footer-brand animated fadeInLeft">
+        <div class="col-md-3 footer-brand animated fadeInLeft" style="margin-top:20px">
           <p>
             O portal foi desenvolvido por alunos do Instituto Federal
             Catarinense do Campus Araquari. <br />
@@ -46,7 +46,7 @@
                 >Instagram</a
               >
             </li>
-            <li><a href="https://araquari.ifc.edu.br/">Site</a></li>
+            <li><a href="https://araquari.ifc.edu.br/">Site IFC</a></li>
           </ul>
         </div>
       </div>
