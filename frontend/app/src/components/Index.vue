@@ -18,7 +18,7 @@
                 <p>
                   <a
                     class="btn btn-secondary p-2 mb-2"
-                    href="/cuidados-covid"
+                    href="#"
                     role="button"
                     >Saiba mais &raquo;</a
                   >
@@ -43,7 +43,7 @@
                 <p>
                   <a
                     class="btn btn-secondary p-2 mb-2"
-                    href="/cuidados-covid"
+                    href="#"
                     role="button"
                     >Saiba mais &raquo;</a
                   >
