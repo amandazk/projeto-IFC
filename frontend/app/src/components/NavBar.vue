@@ -22,10 +22,10 @@
           <a class="nav-link" style="color: rgba(71, 82, 94, 100)" href="/campanhas">Campanhas</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" style="color: rgba(71, 82, 94, 100)" href="#">Serviços</a>
+          <a class="nav-link" style="color: rgba(71, 82, 94, 100)" href="/servicos">Serviços</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" style="color: rgba(71, 82, 94, 100)" href="#">Iniciativas</a>
+          <a class="nav-link" style="color: rgba(71, 82, 94, 100)" href="/voluntariados">Voluntariado</a>
         </li>
       </ul>
       <form class="form-inline my-2 my-lg-0">
