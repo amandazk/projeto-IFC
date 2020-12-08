@@ -13,7 +13,7 @@
 
       <!-- Remind Passowrd -->
       <div id="formFooter">
-        <a class="underlineHover" href="/cadastro">Ainda não é cadastrado?</a>
+        <a class="underlineHover" href="/cadastro">Ainda não é cadastrado? Clique aqui</a>
       </div>
 
     </div>
