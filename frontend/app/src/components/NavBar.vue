@@ -29,7 +29,7 @@
         </li>
       </ul>
       <form class="form-inline my-2 my-lg-0">
-        <a href="/cadastro" class="btn btn-outline-dark my-2 my-sm-0" role="button">Entrar</a>
+        <a href="/login" class="btn btn-outline-dark my-2 my-sm-0" role="button">Entrar</a>
       </form>
     </div>
   </nav>
