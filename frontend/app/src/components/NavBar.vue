@@ -5,7 +5,7 @@
   >
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
       <img
-        src="../assets/logo_p.png"
+        src="../assets/pequeno.png"
         width="160"
         height="40"
         class="d-inline-block align-top"
