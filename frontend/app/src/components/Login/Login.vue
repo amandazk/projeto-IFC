@@ -12,9 +12,9 @@
       </form>
 
       <!-- Remind Passowrd -->
-      <!-- <div id="formFooter">
-        <a class="underlineHover" href="#">Forgot Password?</a>
-      </div> -->
+      <div id="formFooter">
+        <a class="underlineHover" href="/cadastro">Ainda não é cadastrado?</a>
+      </div>
 
     </div>
     </div>
@@ -42,7 +42,7 @@ body {
 }
 
 a {
-  color: #92badd;
+  color: #56555e;
   display:inline-block;
   text-decoration: none;
   font-weight: 400;
