@@ -2,8 +2,7 @@
   <div class="container">
     <div class="wrapper fadeInDown">
     <div id="formContent">
-      <!-- Tabs Titles -->
-
+      <h1>Login</h1>
       <!-- Login Form -->
       <form>
         <input type="text" id="login" class="fadeIn second" name="login" placeholder="usuário">
@@ -11,7 +10,7 @@
         <input type="submit" class="fadeIn fourth" style="font-weight:bold;" value="Entrar">
       </form>
 
-      <!-- Remind Passowrd -->
+      <!-- Cadastro -->
       <div id="formFooter">
         <a class="underlineHover" href="/cadastro">Ainda não é cadastrado? Clique aqui</a>
       </div>
@@ -34,6 +33,9 @@ export default {
   margin-top: 150px;
 }
 
+  h1{
+    padding: 10px;
+  }
 
 body {
   font-family: "Poppins", sans-serif;
@@ -57,10 +59,6 @@ h2 {
   margin: 40px 8px 10px 8px; 
   color: #cccccc;
 }
-
-
-
-/* STRUCTURE */
 
 .wrapper {
   display: flex;
@@ -95,10 +93,6 @@ h2 {
   border-radius: 0 0 10px 10px;
 }
 
-
-
-/* TABS */
-
 h2.inactive {
   color: #cccccc;
 }
@@ -107,10 +101,6 @@ h2.active {
   color: #0d0d0d;
   border-bottom: 2px solid #9bb694;
 }
-
-
-
-/* FORM TYPOGRAPHY*/
 
 input[type=button], input[type=submit], input[type=reset]  {
   background-color: #56555e;
@@ -180,9 +170,5 @@ input[type=text]:placeholder {
 *:focus {
     outline: none;
 } 
-
-#icon {
-  width:60%;
-}
 
 </style>

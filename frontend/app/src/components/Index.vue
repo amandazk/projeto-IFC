@@ -81,7 +81,7 @@
     <div class="row d-flex justify-content-center">
       <div class="col-lg-12 col-sm-12 mb-4 text-center">
         <h1 class="t1">Portal da Solidariedade</h1>
-        <p class="texto">
+        <p class="text">
           O Brasil é a sétima nação mais desigual do mundo atualmente e com
           <br />
           a questão da COVID-19 e o isolamento social, a desigualdade cresce
@@ -125,6 +125,7 @@ export default {
 </script>
 
 <style>
+
 /* .navbar-default {
   margin: 0 !important;
 } */
@@ -133,10 +134,10 @@ export default {
   margin-top: 70px;
 }
 
-.texto {
+.text {
   margin-top: 15px;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;  
   font-size: 19px;
 }
 
