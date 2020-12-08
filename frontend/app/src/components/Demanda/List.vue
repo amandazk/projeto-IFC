@@ -1,13 +1,15 @@
 <template>
-  <div id="app">
-    <h1>Lista de Demandas</h1>
-    <hr />
-    <ul>
-      <li v-for="demanda in demandas" :key="demanda.demanda_id">
-        {{ demanda.titulo_demanda }}
-      </li>
-    </ul>
-  </div>
+  <div class="container"> 
+    <div id="app">
+      <h1>Lista de Demandas</h1>
+      <hr />
+      <ul>
+        <li v-for="demanda in demandas" :key="demanda.demanda_id">
+          {{ demanda.titulo_demanda }}
+        </li>
+      </ul>
+    </div>
+  </div>  
 </template>
 
 <script>

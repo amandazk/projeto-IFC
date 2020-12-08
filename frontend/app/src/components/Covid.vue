@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <v-app id="">
       <NavBar ref="drawer"></NavBar>
       <v-content>

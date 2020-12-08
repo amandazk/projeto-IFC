@@ -1,12 +1,14 @@
 <template>
-  <div id="app">
-    <h1>Lista de Voluntariados</h1>
-    <hr />
-    <ul>
-      <li v-for="voluntariado in voluntariados" :key="voluntariado.voluntariado_id">
-        {{ voluntariado.titulo_voluntariado }}
-      </li>
-    </ul>
+  <div class="container">
+    <div id="app">
+      <h1>Lista de Voluntariados</h1>
+      <hr />
+      <ul>
+        <li v-for="voluntariado in voluntariados" :key="voluntariado.voluntariado_id">
+          {{ voluntariado.titulo_voluntariado }}
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 

@@ -1,12 +1,14 @@
 <template>
-  <div id="app">
-    <h1>Lista de Pessoas</h1>
-    <hr />
-    <ul>
-      <li v-for="pessoa in pessoas" :key="pessoa.pessoa_id">
-        {{ pessoa.nome_pessoa }}
-      </li>
-    </ul>
+  <div class="container">
+    <div id="app">
+      <h1>Lista de Pessoas</h1>
+      <hr />
+      <ul>
+        <li v-for="pessoa in pessoas" :key="pessoa.pessoa_id">
+          {{ pessoa.nome_pessoa }}
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 

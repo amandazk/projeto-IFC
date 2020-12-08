@@ -65,7 +65,7 @@ export default {
  
 <style>
 .container {
-  min-height: 100vh; /* will cover the 100% of viewport */
+  min-height: 60vh; /* will cover the 100% of viewport */
   overflow: hidden;
   display: block;
   position: relative;

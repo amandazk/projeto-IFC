@@ -1,12 +1,14 @@
 <template>
-  <div id="app">
-    <h1>Lista de Serviços</h1>
-    <hr />
-    <ul>
-      <li v-for="servico in servicos" :key="servico.servico_id">
-        {{ servico.titulo_servico }}
-      </li>
-    </ul>
+  <div class="container">
+    <div id="app">
+      <h1>Lista de Serviços</h1>
+      <hr />
+      <ul>
+        <li v-for="servico in servicos" :key="servico.servico_id">
+          {{ servico.titulo_servico }}
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 

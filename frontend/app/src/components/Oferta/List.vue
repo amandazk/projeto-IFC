@@ -1,12 +1,14 @@
 <template>
-  <div id="app">
-    <h1>Lista de Ofertas</h1>
-    <hr />
-    <ul>
-      <li v-for="oferta in ofertas" :key="oferta.oferta_id">
-        {{ oferta.titulo_oferta }}
-      </li>
-    </ul>
+  <div class="container">
+    <div id="app">
+      <h1>Lista de Ofertas</h1>
+      <hr />
+      <ul>
+        <li v-for="oferta in ofertas" :key="oferta.oferta_id">
+          {{ oferta.titulo_oferta }}
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 

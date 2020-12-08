@@ -1,13 +1,15 @@
 <template>
-  <div id="app">
-    <h1>Lista de Campanhas</h1>
-    <hr />
-    <ul>
-      <li v-for="campanha in campanhas" :key="campanha.campanha_id">
-        {{ campanha.titulo_campanha }}
-      </li>
-    </ul>
-  </div>
+  <div class="container">
+    <div id="app">
+      <h1>Lista de Campanhas</h1>
+      <hr />
+      <ul>
+        <li v-for="campanha in campanhas" :key="campanha.campanha_id">
+          {{ campanha.titulo_campanha }}
+        </li>
+      </ul>
+    </div>
+  </div>  
 </template>
 
 <script>
