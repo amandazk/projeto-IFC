@@ -17,7 +17,7 @@
                 <p>
                   <a
                     class="btn btn-secondary p-2 mb-2"
-                    href="#"
+                    href="/informacao-projeto"
                     role="button"
                     >Saiba mais &raquo;</a
                   >
@@ -56,12 +56,13 @@
               <li>
                 <p id="text-card">
                   Durante essa época difícil que estamos passando, é importante 
-                  estarmos sempre bem informados e prevenidos. 
+                  estarmos sempre bem informados e prevenidos. Para isso, criamos 
+                  essa área em nosso site.
                 </p>
                 <p>
                   <a
                     class="btn btn-secondary p-2 mb-2"
-                    href="/#"
+                    href="/cuidados-covid"
                     role="button"
                     >Saiba mais &raquo;</a
                   >

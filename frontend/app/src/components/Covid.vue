@@ -79,7 +79,7 @@ export default {
     padding: 10%;
 }
 .how-section1 h4{
-    color: #ffa500;
+    color: rgba(71, 82, 94, 100);
     font-weight: bold;
     font-size: 30px;
 }
