@@ -4,15 +4,15 @@
       <div class="col-lg-4 col-sm-10 mb-4 text-center">
         <div class="card mb-4 shadow-sm">
           <div class="card-header">
-            <h4 class="my-0 font-weight-normal" id="title">Como posso participar</h4>
+            <h4 class="my-0 font-weight-normal" id="title">Como me cadastrar</h4>
           </div>
           <div class="card-body">
             <ul class="list-unstyled mt-3 mb-4">
               <li>
                 <p id="text-card">
-                  Donec id elit non mi porta gravida at eget metus. Fusce
-                  dapibus, tellus ac cursus commodo, tortor mauris condimentum
-                  nibh, ut fermentum massa justo sit amet risus. 
+                  Efetuar o cadastro no site é simples. Se você tiver qualquer 
+                  dúvida em relação a esse assunto, pode clicar no botão "Saiba mais", 
+                  logo embaixo.
                 </p>
                 <p>
                   <a
@@ -30,22 +30,16 @@
       <div class="col-lg-4 col-sm-10 mb-4 text-center">
         <div class="card mb-4 shadow-sm">
           <div class="card-header">
-            <h4 class="my-0 font-weight-normal" id="title">Como me cadastrar</h4>
+            <h4 class="my-0 font-weight-normal" id="title">Como posso participar</h4>
           </div>
           <div class="card-body">
-            <ul class="list-unstyled mt-3 mb-4">
+            <ul class="list-unstyled mt-2 mb-4">
               <li>
                 <p id="text-card">
-                  Efetuar o cadastro em nosso site é simples. Basta clicar no botão ''Saiba mais''
-                  e você vai entender qual cadastro deve realizar e quais suas finalidades.
-                </p>
-                <p>
-                  <a
-                    class="btn btn-secondary p-2 mb-2"
-                    href="#"
-                    role="button"
-                    >Saiba mais &raquo;</a
-                  >
+                  Você pode participar de várias maneiras, contribuindo
+                  com campanhas, voluntariados e divulgando seus 
+                  serviços, para que sejam vistos por pessoas interessadas.
+                  Para isso, basta se cadastrar.
                 </p>
               </li>
             </ul>
@@ -61,8 +55,8 @@
             <ul class="list-unstyled mt-3 mb-4">
               <li>
                 <p id="text-card">
-                  Durante essa época difícil que estamos passando é importante estarmos sempre 
-                  prevenidos. Para isso, criamos essa área para você saber como se cuidar.
+                  Durante essa época difícil que estamos passando, é importante 
+                  estarmos sempre bem informados e prevenidos. 
                 </p>
                 <p>
                   <a
