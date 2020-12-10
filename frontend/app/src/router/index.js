@@ -55,7 +55,7 @@ export default new VueRouter({
       component: PessoaList
     },
     {
-      path: '/pessoas/create',
+      path: '/pessoas/cadastro',
       name: 'PessoaCreate',
       component: PessoaCreate
     },

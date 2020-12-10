@@ -12,7 +12,7 @@
 
       <!-- Cadastro -->
       <div id="formFooter">
-        <a class="underlineHover" href="/cadastro">Ainda não é cadastrado? Clique aqui</a>
+        <a class="underlineHover" href="/pessoas/cadastro">Ainda não é cadastrado? Clique aqui</a>
       </div>
 
     </div>
