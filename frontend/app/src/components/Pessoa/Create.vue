@@ -11,7 +11,6 @@
             class="fadeIn second"
             name="login"
             placeholder="nome"
-            v-model="txtInput"
           />
           <input
             type="text"
@@ -49,49 +48,7 @@
 </template>
 
 <script>
-// import axios from "axios";
-export default {
-  name: "PessoaCreate",
-//   data() {
-//     return {
-//       pessoas: [],
 
-//     };
-//   },
-//   created(){
-//     this.getPesoas
-//   },
-//   methods: {
-//     getPessoas() {
-//       axios
-//       .request({
-//         baseURL: "http://localhost:8000",
-//         method: "get",
-//         url: "/api/pessoas/"
-//       })
-//       .then(response => {
-//         this.pessoas = response.data
-//         console.log(response)
-//       });
-//     },
-//     add() {
-//       axios
-//         .post("http://localhost:8000/api/pessoas/add",
-//           this.pessoa,
-//           {
-//             headers: {
-//               Authorization: `Token ${this.$session.get("token")}`
-//             }
-//           }
-//         )
-//         .then(response => {
-//           this.dialog = false
-//           this.$emit('updateCases')
-//           this.log.console(response)
-//     });
-//     }
-//   }
-}
 </script>
 
 <style>
