@@ -1,47 +1,97 @@
 <template>
   <div class="container">
     <div class="wrapper fadeInDown">
-    <div id="formContent">
-      <h1>Cadastro</h1>
-      <!-- Login Form -->
-      <form>
-        <input type="text" id="nome" class="fadeIn second" name="login" placeholder="nome">
-        <input type="text" id="cpf" class="fadeIn third" name="login" placeholder="cpf">
-        <!-- <input type="date" id="nasc" class="fadeIn third" name="login" placeholder="data de nascimento"> -->
-        <input type="email" id="email" class="fadeIn third" name="login" placeholder="e-mail">
-        <input type="tel" id="fone" class="fadeIn third" name="login" placeholder="telefone">
+      <div id="formContent">
+        <h1>Cadastro</h1>
+        <!-- Login Form -->
+        <form>
+          <input
+            type="text"
+            id="nome"
+            class="fadeIn second"
+            name="login"
+            placeholder="nome"
+            v-model="txtInput"
+          />
+          <input
+            type="text"
+            id="cpf"
+            class="fadeIn third"
+            name="login"
+            placeholder="cpf"
+          />
+          <!-- <input type="date" id="nasc" class="fadeIn third" name="login" placeholder="data de nascimento"> -->
+          <input
+            type="email"
+            id="email"
+            class="fadeIn third"
+            name="login"
+            placeholder="e-mail"
+          />
+          <input
+            type="tel"
+            id="fone"
+            class="fadeIn third"
+            name="login"
+            placeholder="telefone"
+          />
 
-        <input type="submit" class="fadeIn fourth" style="font-weight:bold;" value="Cadastrar">
-      </form>
-
-    </div>
+          <input
+            type="submit"
+            class="fadeIn fourth"
+            style="font-weight: bold"
+            value="Cadastrar"
+          />
+        </form>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-import axios from "axios";
+// import axios from "axios";
 export default {
   name: "PessoaCreate",
-  data() {
-    return {
-      newCampanha: "",
-      campanhas: [],
-    };
-  },
-  mounted() {
-    // na hora que a página for montada, quero exibir o resultado do banco
-    this.getCampanha();
-  },
-  methods: {
-    getCampanha() {
-      axios.get("http://localhost:8000/api/campanhas").then((res) => {
-        // console.log(res.data);
-        this.campanhas = res.data;
-      });
-    },
-  },
-};
+//   data() {
+//     return {
+//       pessoas: [],
+
+//     };
+//   },
+//   created(){
+//     this.getPesoas
+//   },
+//   methods: {
+//     getPessoas() {
+//       axios
+//       .request({
+//         baseURL: "http://localhost:8000",
+//         method: "get",
+//         url: "/api/pessoas/"
+//       })
+//       .then(response => {
+//         this.pessoas = response.data
+//         console.log(response)
+//       });
+//     },
+//     add() {
+//       axios
+//         .post("http://localhost:8000/api/pessoas/add",
+//           this.pessoa,
+//           {
+//             headers: {
+//               Authorization: `Token ${this.$session.get("token")}`
+//             }
+//           }
+//         )
+//         .then(response => {
+//           this.dialog = false
+//           this.$emit('updateCases')
+//           this.log.console(response)
+//     });
+//     }
+//   }
+}
 </script>
 
 <style>
@@ -49,9 +99,9 @@ export default {
   margin-top: 150px;
 }
 
-  h1{
-    padding: 10px;
-  }
+h1 {
+  padding: 10px;
+}
 
 body {
   font-family: "Poppins", sans-serif;
@@ -61,7 +111,7 @@ body {
 
 a {
   color: #56555e;
-  display:inline-block;
+  display: inline-block;
   text-decoration: none;
   font-weight: 400;
 }
@@ -71,15 +121,15 @@ h2 {
   font-size: 16px;
   font-weight: 600;
   text-transform: uppercase;
-  display:inline-block;
-  margin: 40px 8px 10px 8px; 
+  display: inline-block;
+  margin: 40px 8px 10px 8px;
   color: #cccccc;
 }
 
 .wrapper {
   display: flex;
   align-items: center;
-  flex-direction: column; 
+  flex-direction: column;
   justify-content: center;
   width: 100%;
   min-height: 100%;
@@ -118,7 +168,9 @@ h2.active {
   border-bottom: 2px solid #9bb694;
 }
 
-input[type=button], input[type=submit], input[type=reset]  {
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
   background-color: #56555e;
   border: none;
   color: white;
@@ -140,11 +192,15 @@ input[type=button], input[type=submit], input[type=reset]  {
   transition: all 0.3s ease-in-out;
 }
 
-input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover  {
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
   background-color: #868686;
 }
 
-input[type=button]:active, input[type=submit]:active, input[type=reset]:active  {
+input[type="button"]:active,
+input[type="submit"]:active,
+input[type="reset"]:active {
   -moz-transform: scale(0.95);
   -webkit-transform: scale(0.95);
   -o-transform: scale(0.95);
@@ -152,7 +208,10 @@ input[type=button]:active, input[type=submit]:active, input[type=reset]:active  
   transform: scale(0.95);
 }
 
-input[type=text], input[type=date], input[type=email], input[type=tel] {
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="tel"] {
   background-color: #f6f6f6;
   border: none;
   color: #0d0d0d;
@@ -173,17 +232,22 @@ input[type=text], input[type=date], input[type=email], input[type=tel] {
   border-radius: 5px 5px 5px 5px;
 }
 
-input[type=text]:focus, input[type=date]:focus, input[type=email]:focus, input[type=tel]:focus {
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus {
   background-color: #fff;
   border-bottom: 2px solid #9bb694;
 }
 
-
-input[type=text]:placeholder, input[type=date]:placeholder, input[type=email]:placeholder, input[type=tel]:placeholder {
+input[type="text"]:placeholder,
+input[type="date"]:placeholder,
+input[type="email"]:placeholder,
+input[type="tel"]:placeholder {
   color: #cccccc;
 }
 
 *:focus {
-    outline: none;
-} 
+  outline: none;
+}
 </style>

@@ -11,7 +11,7 @@
 <div class="how-section1">
                     <div class="row">
                         <div class="col-md-6 how-img">
-                            <img src="https://image.ibb.co/dDW27U/Work_Section2_freelance_img1.png" class="rounded-circle img-fluid" alt=""/>
+                            <img src="../assets/covid-19.png" class="rounded-circle img-fluid" alt=""/>
                         </div>
                         <div class="col-md-6">
                             <h4>O que é Coronavírus?</h4>
@@ -25,19 +25,23 @@
                     </div>
                     <div class="row">
                         <div class="col-md-6">
-                            <h4>Transmissão</h4>
-                                        <p class="text-muted">As investigações sobre a transmissão do coronavírus ainda estão em andamento,
-                                         mas a disseminação da doença se dá por contato próximo de pessoa por pessoa e pode ocorrer de forma continuada.
-                                        Alguns vírus são altamente contagiosos (como sarampo), enquanto outros são menos. Ainda não está claro 
-                                        com que facilidade o coronavírus se espalha de pessoa para pessoa.</p>
+                            <h4>Prevenção</h4>
+                                        <p class="text-muted">Para afastar o risco de doenças, principalmente em tempos de pandemia da Covid-19, 
+                                        vale a pena incorporar alguns outros cuidados ao seu dia a dia. <br>
+                                        • Lave sempre as mãos. Use sabão e água ou álcool em gel; <br>
+                                        • Cubra a boca ao tossir ou espirrar; <br>
+                                        • Mantenha o distânciamento social; <br>
+                                        • Use máscara quando não for possível manter o distanciamento físico. <br>
+                                        • Evite tocar nos olhos, nariz e boca; <br>
+                                        • Fique em casa se não se sentir bem. </p>
                         </div>
                         <div class="col-md-6 how-img">
-                            <img src="https://image.ibb.co/cHgKnU/Work_Section2_freelance_img2.png" class="rounded-circle img-fluid" alt=""/>
+                            <img src="../assets/gel.png" class="rounded-circle img-fluid" alt=""/>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6 how-img">
-                             <img src="https://image.ibb.co/ctSLu9/Work_Section2_freelance_img3.png" class="rounded-circle img-fluid" alt=""/>
+                             <img src="../assets/mascara.png" class="rounded-circle img-fluid" alt=""/>
                         </div>
                         <div class="col-md-6">
                             <h4>Formas de Contágio</h4>
@@ -96,7 +100,7 @@ export default {
     text-align: center;
 }
 .how-img img{
-    width: 40%;
+    width: 70%;
 }
 
 </style>
