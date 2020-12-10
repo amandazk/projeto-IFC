@@ -15,9 +15,9 @@
         <li class="nav-item">
           <a class="nav-link" style="color: rgba(71, 82, 94, 100)" href="/">Home</a>
         </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a class="nav-link" style="color: rgba(71, 82, 94, 100)" href="#">Notícias</a>
-        </li>
+        </li> -->
         <li class="nav-item">
           <a class="nav-link" style="color: rgba(71, 82, 94, 100)" href="/campanhas">Campanhas</a>
         </li>

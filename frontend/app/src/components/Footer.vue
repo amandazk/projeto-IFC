@@ -24,8 +24,8 @@
         <div class="col-md-6">
           <ul class="list">
             <li><a href="/">Home</a></li>
-            <li><a href="#">Iniciativas</a></li>
-            <li><a href="#">Campanhas</a></li>
+            <li><a href="/voluntariados">Voluntariado</a></li>
+            <li><a href="/campanhas">Campanhas</a></li>
           </ul>
         </div>
       </div>
@@ -33,9 +33,9 @@
         <h4>Mais opções</h4>
         <div class="col-md-6">
           <ul class="list">
-            <li><a href="#">Notícias</a></li>
-            <li><a href="#">Serviços</a></li>
-            <li><a href="#">Sobre nós</a></li>
+            <li><a href="/login">Login</a></li>
+            <li><a href="/pessoas/cadastro">Cadastro</a></li>
+            <li><a href="/servicos">Serviços</a></li>
           </ul>
         </div>
       </div>
