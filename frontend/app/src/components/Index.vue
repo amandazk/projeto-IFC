@@ -56,8 +56,7 @@
               <li>
                 <p id="text-card">
                   Durante essa época difícil que estamos passando, é importante 
-                  estarmos sempre bem informados e prevenidos. Para isso, criamos 
-                  essa área em nosso site.
+                  estarmos sempre bem informados e prevenidos. 
                 </p>
                 <p>
                   <a
