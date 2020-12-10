@@ -8,6 +8,7 @@ import CampanhaList from '../components/Campanha/List.vue'
 import DemandaList from '../components/Demanda/List.vue'
 import OfertaList from '../components/Oferta/List.vue'
 import PessoaList from '../components/Pessoa/List.vue'
+import PessoaCreate from '../components/Pessoa/Create.vue'
 import ServicoList from '../components/Servico/List.vue'
 import VoluntariadoList from '../components/Voluntariado/List.vue'
 import Login from '../components/Login/Login.vue'
@@ -52,6 +53,11 @@ export default new VueRouter({
       path: '/pessoas',
       name: 'PessoaList',
       component: PessoaList
+    },
+    {
+      path: '/pessoas/create',
+      name: 'PessoaCreate',
+      component: PessoaCreate
     },
     {
       path: '/servicos',
