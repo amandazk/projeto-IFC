@@ -84,6 +84,7 @@ export default {
       // cpf: [],
       // email: [],
       // fone: [],
+      // nasc: [],
       pessoa: {},
       fone: {},
     };
@@ -139,7 +140,7 @@ export default {
     //     })
     //     .then((response) => {
     //       this.dialog = false;
-    //       this.$emit("updatePessoa");
+    //       this.$emit("updateFone");
     //       this.log.console(response);
     //     });
     // },
