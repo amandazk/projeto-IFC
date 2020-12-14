@@ -89,8 +89,8 @@ export default {
     };
   },
   created() {
-    this.getPessoa()
-    this.getFone()
+    this.getPessoa();
+    this.getFone();
   },
   methods: {
     getPessoa() {
@@ -117,7 +117,7 @@ export default {
           console.log(response);
         });
     },
-    add() {
+    addPessoa() {
       axios
         .post("http://localhost:8000/api/pessoas/add/", this.pessoa, {
           headers: {
@@ -130,6 +130,19 @@ export default {
           this.log.console(response);
         });
     },
+    // addFone() {
+    //   axios
+    //     .post("http://localhost:8000/api/fones/add/", this.fone, {
+    //       headers: {
+    //         Authorization: `Token ${this.$session.get("token")}`,
+    //       },
+    //     })
+    //     .then((response) => {
+    //       this.dialog = false;
+    //       this.$emit("updatePessoa");
+    //       this.log.console(response);
+    //     });
+    // },
   },
 };
 </script>
