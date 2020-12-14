@@ -86,9 +86,22 @@
       <div class="jumbotron bg-white text-dark">
         <h6><b>Fontes</b></h6>
         <ul>
-            <li><a href="http://www.saude.pa.gov.br/transmissao/">Secretaria de Saúde Público do Estado do Pará</a></li>
-            <li><a href="https://www.saude.sc.gov.br/coronavirus/doenca.html">Secretaria de Estado da Saúde de SC</a></li>
-            <li><a href="https://saude.abril.com.br/bem-estar/higiene-pessoal-em-tempos-de-covid-19/">Saúde Abril</a></li>
+          <li>
+            <a href="http://www.saude.pa.gov.br/transmissao/"
+              >Secretaria de Saúde Público do Estado do Pará</a
+            >
+          </li>
+          <li>
+            <a href="https://www.saude.sc.gov.br/coronavirus/doenca.html"
+              >Secretaria de Estado da Saúde de SC</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://saude.abril.com.br/bem-estar/higiene-pessoal-em-tempos-de-covid-19/"
+              >Saúde Abril</a
+            >
+          </li>
         </ul>
       </div>
     </div>
@@ -132,7 +145,17 @@ export default {
 .how-img img {
   width: 70%;
 }
-/* .jumbotron{
-    background-color:#9bb694!important;
-} */
+.jumbotron {
+  background-color: #9bb694 !important;
+  /* background-size: 70%; */
+  padding-top: 30px !important;
+  padding-bottom: 20px !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  /* height: 50%; */
+  /* width: 60%; */
+  /* text-align: center; */
+
+
+}
 </style>
