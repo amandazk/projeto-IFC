@@ -3,7 +3,7 @@
     <div class="wrapper fadeInDown">
       <div id="formContent">
         <h1>Cadastro</h1>
-        <!-- Login Form -->
+
         <form>
           <p>
             <label for="nome">Nome</label>
@@ -12,7 +12,7 @@
               id="nome"
               v-model="pessoa.nome_pessoa"
               class="fadeIn second"
-              name="login"
+              name="cadastro"
             />
           </p>
 
@@ -23,7 +23,7 @@
               id="cpf"
               v-model="pessoa.cpf_pessoa"
               class="fadeIn third"
-              name="login"
+              name="cadastro"
             />
           </p>
 
@@ -34,7 +34,7 @@
               id="email"
               v-model="pessoa.email_pessoa"
               class="fadeIn third"
-              name="login"
+              name="cadastro"
             />
           </p>
 
@@ -45,7 +45,7 @@
               id="nasc"
               v-model="pessoa.nasc_pessoa"
               class="fadeIn third"
-              name="login"
+              name="cadastro"
             />
           </p>
 
@@ -56,7 +56,7 @@
               id="fone"
               v-model="fone.nr_fone"
               class="fadeIn third"
-              name="login"
+              name="cadastro"
             />
           </p>
 
@@ -65,6 +65,7 @@
             class="fadeIn fourth"
             style="font-weight: bold"
             value="Cadastrar"
+            v-on:click="add()"
           />
         </form>
       </div>
@@ -75,7 +76,7 @@
 <script>
 import axios from "axios";
 export default {
-  name: "CreatePessoas",
+  name: "PessoaCreate",
   data: function () {
     return {
       dialog: false,
@@ -88,7 +89,8 @@ export default {
     };
   },
   created() {
-    this.getPessoa();
+    this.getPessoa()
+    this.getFone()
   },
   methods: {
     getPessoa() {
@@ -100,6 +102,18 @@ export default {
         })
         .then((response) => {
           this.pessoa = response.data;
+          console.log(response);
+        });
+    },
+    getFone() {
+      axios
+        .request({
+          baseURL: "http://localhost:8000",
+          method: "get",
+          url: "/api/fones/",
+        })
+        .then((response) => {
+          this.fone = response.data;
           console.log(response);
         });
     },
