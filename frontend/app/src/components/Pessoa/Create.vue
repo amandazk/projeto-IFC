@@ -5,35 +5,60 @@
         <h1>Cadastro</h1>
         <!-- Login Form -->
         <form>
-          <input
-            type="text"
-            id="nome"
-            class="fadeIn second"
-            name="login"
-            placeholder="nome"
-          />
-          <input
-            type="text"
-            id="cpf"
-            class="fadeIn third"
-            name="login"
-            placeholder="cpf"
-          />
-          <!-- <input type="date" id="nasc" class="fadeIn third" name="login" placeholder="data de nascimento"> -->
-          <input
-            type="email"
-            id="email"
-            class="fadeIn third"
-            name="login"
-            placeholder="e-mail"
-          />
-          <input
-            type="tel"
-            id="fone"
-            class="fadeIn third"
-            name="login"
-            placeholder="telefone"
-          />
+          <p>
+            <label for="nome">Nome</label>
+            <input
+              type="text"
+              id="nome"
+              v-model="pessoa.nome_pessoa"
+              class="fadeIn second"
+              name="login"
+            />
+          </p>
+
+          <p>
+            <label for="cpf">CPF</label>
+            <input
+              type="text"
+              id="cpf"
+              v-model="pessoa.cpf_pessoa"
+              class="fadeIn third"
+              name="login"
+            />
+          </p>
+
+          <p>
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              v-model="pessoa.email_pessoa"
+              class="fadeIn third"
+              name="login"
+            />
+          </p>
+
+          <p>
+            <label for="nasc">Data de Nascimento</label>
+            <input
+              type="date"
+              id="nasc"
+              v-model="pessoa.nasc_pessoa"
+              class="fadeIn third"
+              name="login"
+            />
+          </p>
+
+          <p>
+            <label for="fone">Fone</label>
+            <input
+              type="tel"
+              id="fone"
+              v-model="fone.nr_fone"
+              class="fadeIn third"
+              name="login"
+            />
+          </p>
 
           <input
             type="submit"
@@ -48,12 +73,60 @@
 </template>
 
 <script>
-
+import axios from "axios";
+export default {
+  name: "CreatePessoas",
+  data: function () {
+    return {
+      dialog: false,
+      // nome: [],
+      // cpf: [],
+      // email: [],
+      // fone: [],
+      pessoa: {},
+      fone: {},
+    };
+  },
+  created() {
+    this.getPessoa();
+  },
+  methods: {
+    getPessoa() {
+      axios
+        .request({
+          baseURL: "http://localhost:8000",
+          method: "get",
+          url: "/api/pessoas/",
+        })
+        .then((response) => {
+          this.pessoa = response.data;
+          console.log(response);
+        });
+    },
+    add() {
+      axios
+        .post("http://localhost:8000/api/pessoas/add/", this.pessoa, {
+          headers: {
+            Authorization: `Token ${this.$session.get("token")}`,
+          },
+        })
+        .then((response) => {
+          this.dialog = false;
+          this.$emit("updatePessoa");
+          this.log.console(response);
+        });
+    },
+  },
+};
 </script>
 
 <style>
 .container {
   margin-top: 150px;
+}
+
+label {
+  margin: 5px;
 }
 
 h1 {
