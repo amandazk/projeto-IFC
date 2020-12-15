@@ -11,7 +11,7 @@ import PessoaList from '../components/Pessoa/List.vue'
 import PessoaCreate from '../components/Pessoa/Create.vue'
 import ServicoList from '../components/Servico/List.vue'
 import VoluntariadoList from '../components/Voluntariado/List.vue'
-import Login from '../components/Login/Login.vue'
+import Login from '@/views/Login.vue'
 //import { component } from 'vue/types/umd';
 
 Vue.use(VueRouter)

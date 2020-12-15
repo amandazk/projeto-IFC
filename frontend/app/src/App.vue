@@ -1,12 +1,12 @@
 <template>
   <div>
-    <v-app id="">
+    <!-- <v-app id=""> -->
       <nav-bar ref="drawer" />
-      <v-content>
+      <section id="content">
         <router-view></router-view>
-      </v-content>
+      </section>
       <footer-bar ref="drawer" />
-    </v-app>
+    <!-- </v-app> -->
   </div>
 </template>
  

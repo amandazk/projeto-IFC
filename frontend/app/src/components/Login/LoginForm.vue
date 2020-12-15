@@ -1,31 +1,70 @@
 <template>
-  <div class="container">
-    <div class="wrapper fadeInDown">
-    <div id="formContent">
-      <h1>Login</h1>
-      <!-- Login Form -->
-      <form>
-        <input type="text" id="login" class="fadeIn second" name="login" placeholder="usuário">
-        <input type="text" id="password" class="fadeIn third" name="login" placeholder="senha">
-        <input type="submit" class="fadeIn fourth" style="font-weight:bold;" value="Entrar">
-      </form>
+  <div id="formContent">
+    <h1>Login</h1>
+    <h2>Logado: {{loggedIn}}</h2>
+    <!-- Login Form -->
+    <form>
+      <input
+        type="text"
+        id="login"
+        class="fadeIn second"
+        name="login"
+        placeholder="usuário"
+        v-model="user.username"
+      />
+      <input
+        type="password"
+        id="password"
+        class="fadeIn third"
+        name="login"
+        placeholder="senha"
+        v-model="user.password"
+      />
+      <input
+        type="submit"
+        class="fadeIn fourth"
+        style="font-weight: bold"
+        value="Entrar"
+        @click.prevent="submit"
+      />
+    </form>
 
-      <!-- Cadastro -->
-      <div id="formFooter">
-        <a class="underlineHover" href="/pessoas/cadastro">Ainda não é cadastrado? Clique aqui</a>
-      </div>
-
-    </div>
+    <!-- Cadastro -->
+    <div id="formFooter">
+      <a class="underlineHover" href="/pessoas/cadastro"
+        >Ainda não é cadastrado? Clique aqui</a
+      >
     </div>
   </div>
 </template>
 
 <script>
+
+import { mapActions, mapState } from 'vuex'
+
 export default {
-  name : "Login" , 
+  name: "Login",
   data() {
-    
-}}
+    return {
+      user: {}
+    }
+  },
+  computed: {
+    ...mapState('auth', ['loggedIn'])
+  },
+  methods: {
+    ...mapActions('auth', ['login']),
+    async submit() {
+      try {
+        console.log('oi')
+        await this.login(this.user)
+        // this.$router.push( { path: '/' })
+      } catch(error) {
+        console.log('Erro de Login: ', error)
+      }
+    }
+  }
+};
 </script>
 
 <style>
@@ -33,9 +72,9 @@ export default {
   margin-top: 150px;
 }
 
-  h1{
-    padding: 10px;
-  }
+h1 {
+  padding: 10px;
+}
 
 body {
   font-family: "Poppins", sans-serif;
@@ -45,7 +84,7 @@ body {
 
 a {
   color: #56555e;
-  display:inline-block;
+  display: inline-block;
   text-decoration: none;
   font-weight: 400;
 }
@@ -55,15 +94,15 @@ h2 {
   font-size: 16px;
   font-weight: 600;
   text-transform: uppercase;
-  display:inline-block;
-  margin: 40px 8px 10px 8px; 
+  display: inline-block;
+  margin: 40px 8px 10px 8px;
   color: #cccccc;
 }
 
 .wrapper {
   display: flex;
   align-items: center;
-  flex-direction: column; 
+  flex-direction: column;
   justify-content: center;
   width: 100%;
   min-height: 100%;
@@ -102,7 +141,9 @@ h2.active {
   border-bottom: 2px solid #9bb694;
 }
 
-input[type=button], input[type=submit], input[type=reset]  {
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
   background-color: #56555e;
   border: none;
   color: white;
@@ -124,11 +165,15 @@ input[type=button], input[type=submit], input[type=reset]  {
   transition: all 0.3s ease-in-out;
 }
 
-input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover  {
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
   background-color: #868686;
 }
 
-input[type=button]:active, input[type=submit]:active, input[type=reset]:active  {
+input[type="button"]:active,
+input[type="submit"]:active,
+input[type="reset"]:active {
   -moz-transform: scale(0.95);
   -webkit-transform: scale(0.95);
   -o-transform: scale(0.95);
@@ -136,7 +181,8 @@ input[type=button]:active, input[type=submit]:active, input[type=reset]:active  
   transform: scale(0.95);
 }
 
-input[type=text] {
+input[type="password"], 
+input[type="text"] {
   background-color: #f6f6f6;
   border: none;
   color: #0d0d0d;
@@ -157,18 +203,16 @@ input[type=text] {
   border-radius: 5px 5px 5px 5px;
 }
 
-input[type=text]:focus {
+input[type="text"]:focus {
   background-color: #fff;
   border-bottom: 2px solid #9bb694;
 }
 
-input[type=text]:placeholder {
+input[type="text"]:placeholder {
   color: #cccccc;
 }
 
-
 *:focus {
-    outline: none;
-} 
-
+  outline: none;
+}
 </style>
