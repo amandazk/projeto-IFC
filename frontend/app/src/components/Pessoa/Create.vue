@@ -65,7 +65,7 @@
             class="fadeIn fourth"
             style="font-weight: bold"
             value="Cadastrar"
-            v-on:click="add()"
+            v-on:click="addPessoa()"
           />
         </form>
       </div>
