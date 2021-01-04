@@ -1,7 +1,7 @@
 from django.contrib import admin
 
-from .models.pessoa import TbPessoa
-from .models.fone import TbFone
+from .models.pessoa import Pessoa
+from .models.fone import Fone
 
 class Pessoas(admin.ModelAdmin):
     list_display = ('pessoa_id','cpf_pessoa', 'nome_pessoa')
@@ -9,7 +9,7 @@ class Pessoas(admin.ModelAdmin):
     search_fields = ('cpf_pessoa', 'nome_pessoa')
     list_per_page = 10
 
-admin.site.register(TbPessoa, Pessoas)
+admin.site.register(Pessoa, Pessoas)
 
 class Fones(admin.ModelAdmin):
     list_display = ('fone_id', 'nr_fone',)
@@ -17,4 +17,4 @@ class Fones(admin.ModelAdmin):
     search_fields = ('nr_fone', )
     list_per_page = 10
 
-admin.site.register(TbFone, Fones)
+admin.site.register(Fone, Fones)

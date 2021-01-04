@@ -1,8 +1,8 @@
 from rest_framework import serializers
-from noticia.models import TbNoticia
+from noticia.models import Noticia
 
 class NoticiaSerializer(serializers.ModelSerializer):
     class Meta:
-        model = TbNoticia
+        model = Noticia
         fields = (
             '__all__')

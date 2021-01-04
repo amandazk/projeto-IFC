@@ -1,6 +1,6 @@
 from django.db import models
 
-class TbCampanha(models.Model):
+class Campanha(models.Model):
     objects = models.Manager() #evitar erro no vscode
     campanha_id = models.AutoField(primary_key=True)
     ativo = models.BooleanField(default=False)
@@ -15,7 +15,7 @@ class TbCampanha(models.Model):
     link_campanha = models.URLField()
 
     pessoa = models.ForeignKey(
-        'pessoas.TbPessoa',
+        'pessoas.Pessoa',
         related_name='campanhas',
         on_delete=models.CASCADE,
     )

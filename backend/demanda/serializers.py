@@ -1,8 +1,8 @@
 from rest_framework import serializers
-from demanda.models import TbDemanda
+from demanda.models import Demanda
 
 class DemandaSerializer(serializers.ModelSerializer):
     class Meta:
-        model = TbDemanda
+        model = Demanda
         fields = (
             '__all__')

@@ -1,17 +1,17 @@
 from rest_framework import generics, permissions
 
-from voluntariado.models import TbVoluntariado
+from voluntariado.models import Voluntariado
 from voluntariado.serializers import VoluntariadoSerializer
 
 class VoluntariadoList(generics.ListAPIView):
     """Listando voluntarios"""
-    queryset = TbVoluntariado.objects.all()
+    queryset = Voluntariado.objects.all()
     serializer_class = VoluntariadoSerializer
     permission_classes = ()
 
 class VoluntariadoDestroy(generics.DestroyAPIView):
     """Excluindo voluntariado"""
-    queryset = TbVoluntariado.objects.all()
+    queryset = Voluntariado.objects.all()
     serializer_class = VoluntariadoSerializer
     permission_classes = (
         permissions.IsAdminUser,
@@ -19,7 +19,7 @@ class VoluntariadoDestroy(generics.DestroyAPIView):
 
 class VoluntariadoUpdate(generics.UpdateAPIView):
     """Update de voluntariado"""
-    queryset = TbVoluntariado.objects.all()
+    queryset = Voluntariado.objects.all()
     serializer_class = VoluntariadoSerializer
     permission_classes = (
         permissions.IsAuthenticated, 
@@ -27,7 +27,7 @@ class VoluntariadoUpdate(generics.UpdateAPIView):
 
 class VoluntariadoCreate(generics.CreateAPIView):
     """Criando voluntariado"""
-    queryset = TbVoluntariado.objects.all()
+    queryset = Voluntariado.objects.all()
     serializer_class = VoluntariadoSerializer
     permission_classes = (
         permissions.DjangoModelPermissions,
@@ -35,6 +35,6 @@ class VoluntariadoCreate(generics.CreateAPIView):
 
 class VoluntariadoGet(generics.RetrieveAPIView):
     """Listando um voluntariado"""
-    queryset = TbVoluntariado.objects.all()
+    queryset = Voluntariado.objects.all()
     serializer_class = VoluntariadoSerializer
     permission_classes = ()

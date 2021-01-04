@@ -1,11 +1,11 @@
 from rest_framework import serializers
-from pessoas.models import TbPessoa
-from pessoas.models import TbFone
+from pessoas.models import Pessoa
+from pessoas.models import Fone
 from pessoas.validators import cpf_valido
 
 class PessoaSerializer(serializers.ModelSerializer):
     class Meta:
-        model = TbPessoa
+        model = Pessoa
         fields = (
             '__all__')
 
@@ -16,6 +16,6 @@ class PessoaSerializer(serializers.ModelSerializer):
 
 class FoneSerializer(serializers.ModelSerializer):
     class Meta:
-        model = TbFone
+        model = Fone
         fields = (
             '__all__')

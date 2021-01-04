@@ -1,7 +1,7 @@
 from django.db import models
 from phonenumber_field.modelfields import PhoneNumberField
 
-class TbFone(models.Model):
+class Fone(models.Model):
     objects = models.Manager()
     fone_id = models.AutoField(primary_key=True)
     nr_fone = PhoneNumberField(blank = False)

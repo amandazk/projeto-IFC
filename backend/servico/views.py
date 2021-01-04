@@ -1,17 +1,17 @@
 from rest_framework import generics, permissions
 
-from servico.models import TbServico
+from servico.models import Servico
 from servico.serializers import ServicoSerializer
 
 class ServicoList(generics.ListAPIView):
     """Listando servico"""
-    queryset = TbServico.objects.all()
+    queryset = Servico.objects.all()
     serializer_class = ServicoSerializer
     permission_classes = ()
 
 class ServicoDestroy(generics.DestroyAPIView):
     """Excluindo servico"""
-    queryset = TbServico.objects.all()
+    queryset = Servico.objects.all()
     serializer_class = ServicoSerializer
     permission_classes = (
         permissions.IsAdminUser,
@@ -19,7 +19,7 @@ class ServicoDestroy(generics.DestroyAPIView):
 
 class ServicoUpdate(generics.UpdateAPIView):
     """Update de Servico"""
-    queryset = TbServico.objects.all()
+    queryset = Servico.objects.all()
     serializer_class = ServicoSerializer
     permission_classes = (
         permissions.IsAuthenticated, #talvez deixar só pro admin
@@ -27,7 +27,7 @@ class ServicoUpdate(generics.UpdateAPIView):
 
 class ServicoCreate(generics.CreateAPIView):
     """Criando Servico"""
-    queryset = TbServico.objects.all()
+    queryset = Servico.objects.all()
     serializer_class = ServicoSerializer
     permission_classes = (
         permissions.DjangoModelPermissions,
@@ -35,7 +35,7 @@ class ServicoCreate(generics.CreateAPIView):
 
 class ServicoGet(generics.RetrieveAPIView):
     """Listando uma Servico"""
-    queryset = TbServico.objects.all()
+    queryset = Servico.objects.all()
     serializer_class = ServicoSerializer
     permission_classes = ()
 

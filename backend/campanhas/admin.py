@@ -1,5 +1,5 @@
 from django.contrib import admin
-from campanhas.models import TbCampanha
+from campanhas.models import Campanha
 
 class Campanhas(admin.ModelAdmin):
     list_display = ('campanha_id', 'ativo', 'titulo_campanha', 'pessoa')
@@ -7,4 +7,4 @@ class Campanhas(admin.ModelAdmin):
     search_fields = ('titulo_campanha',)
     list_per_page = 10
 
-admin.site.register(TbCampanha, Campanhas)
+admin.site.register(Campanha, Campanhas)

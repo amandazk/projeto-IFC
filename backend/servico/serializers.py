@@ -1,8 +1,8 @@
 from rest_framework import serializers
-from servico.models import TbServico
+from servico.models import Servico
 
 class ServicoSerializer(serializers.ModelSerializer):
     class Meta:
-        model = TbServico
+        model = Servico
         fields = (
             '__all__')

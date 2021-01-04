@@ -1,10 +1,10 @@
 from rest_framework import serializers
-from voluntariado.models import TbVoluntariado
+from voluntariado.models import Voluntariado
 
 
 class VoluntariadoSerializer(serializers.ModelSerializer):
     class Meta:
-        model = TbVoluntariado
+        model = Voluntariado
         fields = (
             '__all__'
         )

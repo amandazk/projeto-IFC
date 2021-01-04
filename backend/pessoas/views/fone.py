@@ -1,18 +1,18 @@
 from rest_framework import generics, permissions
 
-from pessoas.models import TbFone
+from pessoas.models import Fone
 from pessoas.serializers import FoneSerializer
 
 class FoneList(generics.ListAPIView):
     """Listando todos os fones"""
-    queryset = TbFone.objects.all()
+    queryset = Fone.objects.all()
     serializer_class = FoneSerializer
     permission_classes = ()
 
 
 class FoneDestroy(generics.DestroyAPIView):
     """Excluindo fone"""
-    queryset = TbFone.objects.all()
+    queryset = Fone.objects.all()
     serializer_class = FoneSerializer
     permission_classes = (
         permissions.IsAdminUser,
@@ -21,7 +21,7 @@ class FoneDestroy(generics.DestroyAPIView):
 
 class FoneUpdate(generics.UpdateAPIView):
     """Update de fone"""
-    queryset = TbFone.objects.all()
+    queryset = Fone.objects.all()
     serializer_class = FoneSerializer
     permission_classes = (
         permissions.IsAuthenticated,
@@ -30,7 +30,7 @@ class FoneUpdate(generics.UpdateAPIView):
 
 class FoneCreate(generics.CreateAPIView):
     """Criando fone"""
-    queryset = TbFone.objects.all()
+    queryset = Fone.objects.all()
     serializer_class = FoneSerializer
     permission_classes = (
         permissions.DjangoModelPermissions,
@@ -39,6 +39,6 @@ class FoneCreate(generics.CreateAPIView):
 
 class FoneGet(generics.RetrieveAPIView):
     """Listando um fone"""
-    queryset = TbFone.objects.all()
+    queryset = Fone.objects.all()
     serializer_class = FoneSerializer
     permission_classes = ()

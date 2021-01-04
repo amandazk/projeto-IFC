@@ -2,7 +2,7 @@ from django.db import models
 # from django.contrib.gis.db import models
 
 
-class TbDemanda(models.Model):
+class Demanda(models.Model):
     objects = models.Manager()  # evitar erro no vscode
     demanda_id = models.AutoField(primary_key=True)
     titulo_demanda = models.CharField(max_length=100, blank=False)
@@ -15,13 +15,13 @@ class TbDemanda(models.Model):
     desc_demanda = models.TextField(max_length=1400, blank=False)
 
     pessoas = models.ForeignKey(
-        'pessoas.TbPessoa',
+        'pessoas.Pessoa',
         related_name='demanda',
         on_delete=models.CASCADE,
     )
 
     servico = models.ManyToManyField(
-        'servico.TbServico',
+        'servico.Servico',
         related_name='demanda'
     )
 

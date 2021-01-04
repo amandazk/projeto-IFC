@@ -1,6 +1,6 @@
 from django.db import models
 
-class TbOferta(models.Model):
+class Oferta(models.Model):
     objects = models.Manager() #evitar erro no vscode
     oferta_id =  models.AutoField(primary_key=True)
     dt_oferta = models.DateField(blank=False)
@@ -11,7 +11,7 @@ class TbOferta(models.Model):
     cidade_oferta = models.CharField(max_length=100, blank=True, null=True)
 
     pessoas = models.ForeignKey(
-        'pessoas.TbPessoa',
+        'pessoas.Pessoa',
         related_name='oferta',
         on_delete=models.CASCADE,
     )

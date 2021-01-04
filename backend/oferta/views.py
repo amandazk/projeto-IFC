@@ -1,17 +1,17 @@
 from rest_framework import generics, permissions
 
-from oferta.models import TbOferta
+from oferta.models import Oferta
 from oferta.serializers import OfertaSerializer
 
 class OfertaList(generics.ListAPIView):
     """Listando oferta"""
-    queryset = TbOferta.objects.all()
+    queryset = Oferta.objects.all()
     serializer_class = OfertaSerializer
     permission_classes = ()
 
 class OfertaDestroy(generics.DestroyAPIView):
     """Excluindo oferta"""
-    queryset = TbOferta.objects.all()
+    queryset = Oferta.objects.all()
     serializer_class = OfertaSerializer
     permission_classes = (
         permissions.IsAdminUser,
@@ -19,7 +19,7 @@ class OfertaDestroy(generics.DestroyAPIView):
 
 class OfertaUpdate(generics.UpdateAPIView):
     """Update de oferta"""
-    queryset = TbOferta.objects.all()
+    queryset = Oferta.objects.all()
     serializer_class = OfertaSerializer
     permission_classes = (
         permissions.IsAuthenticated, #talvez deixar só pro admin
@@ -27,7 +27,7 @@ class OfertaUpdate(generics.UpdateAPIView):
 
 class OfertaCreate(generics.CreateAPIView):
     """Criando oferta"""
-    queryset = TbOferta.objects.all()
+    queryset = Oferta.objects.all()
     serializer_class = OfertaSerializer
     permission_classes = (
         permissions.DjangoModelPermissions,
@@ -35,7 +35,7 @@ class OfertaCreate(generics.CreateAPIView):
 
 class OfertaGet(generics.RetrieveAPIView):
     """Listando uma oferta"""
-    queryset = TbOferta.objects.all()
+    queryset = Oferta.objects.all()
     serializer_class =OfertaSerializer
     permission_classes = ()
 

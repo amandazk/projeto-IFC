@@ -1,17 +1,17 @@
 from rest_framework import generics, permissions
 
-from noticia.models import TbNoticia
+from noticia.models import Noticia
 from noticia.serializers import NoticiaSerializer
 
 class NoticiaList(generics.ListAPIView):
     """Listando noticia"""
-    queryset = TbNoticia.objects.all()
+    queryset = Noticia.objects.all()
     serializer_class = NoticiaSerializer
     permission_classes = ()
 
 class NoticiaDestroy(generics.DestroyAPIView):
     """Excluindo noticia"""
-    queryset = TbNoticia.objects.all()
+    queryset = Noticia.objects.all()
     serializer_class = NoticiaSerializer
     permission_classes = (
         permissions.IsAdminUser,
@@ -19,7 +19,7 @@ class NoticiaDestroy(generics.DestroyAPIView):
 
 class NoticiaUpdate(generics.UpdateAPIView):
     """Update de noticia"""
-    queryset = TbNoticia.objects.all()
+    queryset = Noticia.objects.all()
     serializer_class =NoticiaSerializer
     permission_classes = (
         permissions.IsAuthenticated, #talvez deixar só pro admin
@@ -27,7 +27,7 @@ class NoticiaUpdate(generics.UpdateAPIView):
 
 class NoticiaCreate(generics.CreateAPIView):
     """Criando noticia"""
-    queryset = TbNoticia.objects.all()
+    queryset = Noticia.objects.all()
     serializer_class = NoticiaSerializer
     permission_classes = (
         permissions.DjangoModelPermissions,
@@ -35,7 +35,7 @@ class NoticiaCreate(generics.CreateAPIView):
 
 class NoticiaGet(generics.RetrieveAPIView):
     """Listando uma noticia"""
-    queryset = TbNoticia.objects.all()
+    queryset = Noticia.objects.all()
     serializer_class = NoticiaSerializer
     permission_classes = ()
 

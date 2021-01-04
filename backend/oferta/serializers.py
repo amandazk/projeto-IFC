@@ -1,8 +1,8 @@
 from rest_framework import serializers
-from oferta.models import TbOferta
+from oferta.models import Oferta
 
 class OfertaSerializer(serializers.ModelSerializer):
     class Meta:
-        model = TbOferta
+        model = Oferta
         fields = (
             '__all__')

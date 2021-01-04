@@ -1,6 +1,6 @@
 from django.db import models
 
-class TbPessoa(models.Model):
+class Pessoa(models.Model):
     objects = models.Manager() #evitar erro no vscode
     pessoa_id = models.AutoField(primary_key=True)
     cpf_pessoa = models.CharField(max_length=11, unique=True, blank=False)
@@ -9,7 +9,7 @@ class TbPessoa(models.Model):
     email_pessoa = models.EmailField(blank=False)
 
     fone = models.ManyToManyField(
-        'pessoas.TbFone',
+        'pessoas.Fone',
         related_name='pessoas'
     )
 

@@ -1,2 +1,2 @@
-from .pessoa import TbPessoa
-from .fone import TbFone
+from .pessoa import Pessoa
+from .fone import Fone

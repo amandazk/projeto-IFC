@@ -1,9 +1,9 @@
 from rest_framework import serializers
-from campanhas.models import TbCampanha
+from campanhas.models import Campanha
 
 class CampanhaSerializer(serializers.ModelSerializer):
     class Meta:
-        model = TbCampanha
+        model = Campanha
         fields = (
             '__all__')
 

@@ -1,7 +1,7 @@
 from django.contrib import admin
 
 from django.contrib import admin
-from servico.models import TbServico
+from servico.models import Servico
 
 class Servicos(admin.ModelAdmin):
     list_display = ('id_servico', 'titulo_servico', 'desc_servico')
@@ -9,4 +9,4 @@ class Servicos(admin.ModelAdmin):
     # search_fields = ('titulo_campanha',)
     list_per_page = 10
 
-admin.site.register(TbServico, Servicos)
+admin.site.register(Servico, Servicos)

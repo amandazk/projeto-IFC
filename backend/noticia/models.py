@@ -1,6 +1,6 @@
 from django.db import models
 
-class TbNoticia(models.Model):
+class Noticia(models.Model):
     objects = models.Manager() #evitar erro no vscode
     noticia_id =  models.AutoField(primary_key=True)
     titulo_noticia = models.CharField(max_length=300, blank=False)
@@ -8,7 +8,7 @@ class TbNoticia(models.Model):
     desc_noticia = models.TextField(max_length=10000, blank=False)
 
     pessoas = models.ForeignKey(
-        'pessoas.TbPessoa',
+        'pessoas.Pessoa',
         related_name='noticia',
         on_delete=models.CASCADE,
     )
