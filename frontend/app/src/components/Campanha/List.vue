@@ -1,16 +1,27 @@
 <template>
   <div class="container">
     <div id="app">
-      <h1>Lista de Campanhas</h1>
-      <hr />
-      <ul>
-        <li v-for="campanha in campanhas" :key="campanha.campanha_id">
-          {{ campanha.titulo_campanha }}
-        </li>
-      </ul>
+      <h1>Campanhas Solidárias</h1>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Campanha</th>
+            <th scope="col">Data Início</th>
+            <th scope="col">Data Fim</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr v-for="campanha in campanhas" :key="campanha.campanha_id">
+            <td>{{ campanha.titulo_campanha }}</td>
+            <td>{{ campanha.dt_inicio_campanha }}</td>
+            <td>{{ campanha.dt_fim_campanha }}</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-  </div>  
+  </div>
 </template>
+
 
 <script>
 import axios from "axios";
@@ -38,4 +49,7 @@ export default {
 </script>
 
 <style>
+.table {
+  margin-top: 40px;
+}
 </style>

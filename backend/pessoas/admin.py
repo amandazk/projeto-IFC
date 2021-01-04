@@ -4,7 +4,7 @@ from .models.pessoa import Pessoa
 from .models.fone import Fone
 
 class Pessoas(admin.ModelAdmin):
-    list_display = ('pessoa_id','cpf_pessoa', 'nome_pessoa')
+    list_display = ('pessoa_id','cpf_pessoa', 'nome_pessoa', 'username')
     list_display_links = ('cpf_pessoa', 'nome_pessoa')
     search_fields = ('cpf_pessoa', 'nome_pessoa')
     list_per_page = 10
