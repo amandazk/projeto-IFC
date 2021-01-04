@@ -5,6 +5,8 @@ class Pessoa(models.Model):
     pessoa_id = models.AutoField(primary_key=True)
     cpf_pessoa = models.CharField(max_length=11, unique=True, blank=False)
     nome_pessoa = models.CharField(max_length=200, blank=False)
+    username = models.CharField(max_length=100, blank=False, unique=True)
+    password = models.CharField(max_length=30, blank=False)
     nasc_pessoa = models.DateField()
     email_pessoa = models.EmailField(blank=False)
 
