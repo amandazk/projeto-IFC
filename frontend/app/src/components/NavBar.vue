@@ -74,9 +74,6 @@ export default {
     },
   },
   methods: {
-    login() {
-      this.$router.go();
-    },
     logout() {
       window.localStorage.removeItem("psIfc");
       this.$router.go();

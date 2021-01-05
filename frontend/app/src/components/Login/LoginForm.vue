@@ -60,10 +60,7 @@ export default {
       } catch (error) {
         console.log("Erro de Login: ", error);
       }
-    },
-    // redireciona() {
-    //   login(), this.$router.go();
-    // },
+    }
   },
 };
 </script>
