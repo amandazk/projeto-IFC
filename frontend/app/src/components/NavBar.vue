@@ -66,11 +66,11 @@ export default {
     },
   },
   methods: {
-    login() {
-      window.location.replace("http://127.0.0.1:8000/accounts/login/");
-    },
+    // login() {
+    //   window.location.replace("http://127.0.0.1:8000/accounts/login/");
+    // },
     logout() {
-      window.localStorage.removeItem("username");
+      window.localStorage.removeItem("psIfc");
       window.location.replace("http://127.0.0.1:8000/");
     },
   },
