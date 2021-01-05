@@ -46,12 +46,20 @@
         </li>
       </ul>
       <form class="form-inline my-2 my-lg-0">
-        <button v-if="isLoggedIn" class="btn btn-outline-dark my-2 my-sm-0" v-on:click="logout">
+        <a class="btn btn-outline-dark my-2 my-sm-0"
+          v-if="isLoggedIn"
+          v-on:click="logout"
+          href="/login"
+        >
           Sair
-        </button>
-        <button v-else class="btn btn-outline-dark my-2 my-sm-0" v-on:click="login">
+        </a>
+        <a class="btn btn-outline-dark my-2 my-sm-0"
+          v-else
+          v-on:click="login"
+          href="/login"
+        >
           Entrar
-        </button>
+        </a>
       </form>
     </div>
   </nav>
@@ -66,12 +74,12 @@ export default {
     },
   },
   methods: {
-    // login() {
-    //   window.location.replace("http://127.0.0.1:8000/accounts/login/");
-    // },
+    login() {
+      this.$router.go();
+    },
     logout() {
       window.localStorage.removeItem("psIfc");
-      window.location.replace("http://127.0.0.1:8000/");
+      this.$router.go();
     },
   },
 };

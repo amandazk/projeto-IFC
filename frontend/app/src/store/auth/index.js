@@ -9,6 +9,7 @@ if (storage && storage.auth) {
     var _user = {}
 }
 
+
 export const auth = {
     namespaced: true,
     state: {
@@ -24,17 +25,9 @@ export const auth = {
             }, (error) => {
                 commit('loginFailure')
                 return Promise.reject(error)
-            })
+            }
+            )
         },
-        // logout () {
-        //     localStorage.removeItem('psIfc')
-        
-        //     this.$router.push('/login')
-        // }
-        logout() {
-            window.localStorage.removeItem("psIfc");
-            window.location.replace("http://127.0.0.1:8000/")    
-        } 
     },
 
     mutations: {

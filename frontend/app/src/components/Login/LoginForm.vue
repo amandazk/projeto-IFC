@@ -1,7 +1,7 @@
 <template>
   <div id="formContent">
     <h1>Login</h1>
-    <h2>Logado: {{loggedIn}}</h2>
+    <h2>Logado: {{ loggedIn }}</h2>
     <!-- Login Form -->
     <form>
       <input
@@ -39,30 +39,32 @@
 </template>
 
 <script>
-
-import { mapActions, mapState } from 'vuex'
+import { mapActions, mapState } from "vuex";
 
 export default {
   name: "Login",
   data() {
     return {
-      user: {}
-    }
+      user: {},
+    };
   },
   computed: {
-    ...mapState('auth', ['loggedIn'])
+    ...mapState("auth", ["loggedIn"]),
   },
   methods: {
-    ...mapActions('auth', ['login']),
+    ...mapActions("auth", ["login"]),
     async submit() {
       try {
-        await this.login(this.user)
+        await this.login(this.user);
         // this.$router.push( { path: '/' })
-      } catch(error) {
-        console.log('Erro de Login: ', error)
+      } catch (error) {
+        console.log("Erro de Login: ", error);
       }
-    }
-  }
+    },
+    // redireciona() {
+    //   login(), this.$router.go();
+    // },
+  },
 };
 </script>
 
@@ -180,7 +182,7 @@ input[type="reset"]:active {
   transform: scale(0.95);
 }
 
-input[type="password"], 
+input[type="password"],
 input[type="text"] {
   background-color: #f6f6f6;
   border: none;
