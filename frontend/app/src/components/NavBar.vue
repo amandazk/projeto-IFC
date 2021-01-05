@@ -1,7 +1,7 @@
 <template>
   <nav
     class="navbar navbar-expand-md navbar-dark"
-    style="background-color: #9BB694;"
+    style="background-color: #9bb694"
   >
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
       <img
@@ -13,23 +13,56 @@
       />
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
         <li class="nav-item">
-          <a class="nav-link" style="color: rgba(71, 82, 94, 100)" href="/">Home</a>
+          <a class="nav-link" style="color: rgba(71, 82, 94, 100)" href="/"
+            >Home</a
+          >
         </li>
         <!-- <li class="nav-item">
           <a class="nav-link" style="color: rgba(71, 82, 94, 100)" href="#">Notícias</a>
         </li> -->
         <li class="nav-item">
-          <a class="nav-link" style="color: rgba(71, 82, 94, 100)" href="/campanhas">Campanhas</a>
+          <a
+            class="nav-link"
+            style="color: rgba(71, 82, 94, 100)"
+            href="/campanhas"
+            >Campanhas</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link" style="color: rgba(71, 82, 94, 100)" href="/servicos">Serviços</a>
+          <a
+            class="nav-link"
+            style="color: rgba(71, 82, 94, 100)"
+            href="/servicos"
+            >Serviços</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link" style="color: rgba(71, 82, 94, 100)" href="/voluntariados">Voluntariado</a>
+          <a
+            class="nav-link"
+            style="color: rgba(71, 82, 94, 100)"
+            href="/voluntariados"
+            >Voluntariado</a
+          >
         </li>
       </ul>
       <form class="form-inline my-2 my-lg-0">
-        <a href="/login" class="btn btn-outline-dark my-2 my-sm-0" role="button">Entrar</a>
+        <template v-if="loggedIn">
+          <a
+            href="/login"
+            class="btn btn-outline-dark my-2 my-sm-0"
+            role="button"
+            >Entrar</a
+          >
+        </template>
+
+        <template v-else>
+          <a
+            href="/login"
+            class="btn btn-outline-dark my-2 my-sm-0"
+            role="button"
+            >Sair</a
+          >
+        </template>
       </form>
     </div>
   </nav>
