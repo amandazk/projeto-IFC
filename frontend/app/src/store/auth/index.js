@@ -31,6 +31,10 @@ export const auth = {
         
         //     this.$router.push('/login')
         // }
+        logout() {
+            window.localStorage.removeItem("username");
+            window.location.replace("http://127.0.0.1:8000/")    
+        } 
     },
 
     mutations: {

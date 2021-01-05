@@ -56,7 +56,6 @@ export default {
     ...mapActions('auth', ['login']),
     async submit() {
       try {
-        console.log('oi')
         await this.login(this.user)
         // this.$router.push( { path: '/' })
       } catch(error) {

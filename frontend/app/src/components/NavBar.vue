@@ -46,23 +46,12 @@
         </li>
       </ul>
       <form class="form-inline my-2 my-lg-0">
-        <template v-if="loggedIn">
-          <a
-            href="/login"
-            class="btn btn-outline-dark my-2 my-sm-0"
-            role="button"
-            >Entrar</a
-          >
-        </template>
-
-        <template v-else>
-          <a
-            href="/login"
-            class="btn btn-outline-dark my-2 my-sm-0"
-            role="button"
-            >Sair</a
-          >
-        </template>
+        <button v-if="isLoggedIn" class="btn btn-outline-dark my-2 my-sm-0" v-on:click="logout">
+          Sair
+        </button>
+        <button v-else class="btn btn-outline-dark my-2 my-sm-0" v-on:click="login">
+          Entrar
+        </button>
       </form>
     </div>
   </nav>
@@ -71,6 +60,20 @@
 <script>
 export default {
   name: "NavBar",
+  computed: {
+    isLoggedIn() {
+      return window.localStorage.getItem("psIfc");
+    },
+  },
+  methods: {
+    login() {
+      window.location.replace("http://127.0.0.1:8000/accounts/login/");
+    },
+    logout() {
+      window.localStorage.removeItem("username");
+      window.location.replace("http://127.0.0.1:8000/");
+    },
+  },
 };
 </script>
 
