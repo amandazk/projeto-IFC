@@ -7,7 +7,7 @@ axios.interceptors.request.use(
         const storage = JSON.parse(localStorage.getItem('psIfc'))
         if (storage && storage.auth) {
             if (storage.auth.loggedIn) {
-                config.headers.common['Authorization'] = `Bearer ${storage.auth.user.access}`
+                config.headers.common['Authorization'] = 'Bearer ${storage.auth.user.access}'
             }
         }
         return config

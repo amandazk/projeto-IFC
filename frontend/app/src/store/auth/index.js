@@ -18,7 +18,6 @@ export const auth = {
 
     actions: {
         login({ commit }, user) {
-            console.log('oi1 ...', user)
             return AuthApi.login(user).then( (user) => {
                 commit('loginSuccess', user)
                 return Promise.resolve(user)
@@ -26,7 +25,12 @@ export const auth = {
                 commit('loginFailure')
                 return Promise.reject(error)
             })
-        }
+        },
+        // logout () {
+        //     localStorage.removeItem('psIfc')
+        
+        //     this.$router.push('/login')
+        // }
     },
 
     mutations: {
