@@ -10,67 +10,51 @@
     <div class="how-section1">
       <div class="row">
         <div class="col-md-6 how-img">
-          <img
-            src="../assets/covid-19.png"
-            class="rounded-circle img-fluid"
-            alt=""
-          />
+          <img src="../assets/1.png" class="rounded-circle img-fluid" alt="" />
         </div>
         <div class="col-md-6">
           <h4>Como fazer o cadastro?</h4>
           <p class="text-muted">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fermentum sit 
-            amet odio sed facilisis. Aliquam ipsum leo, porttitor eget feugiat vitae, molestie 
-            in lorem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur 
-            ridiculus mus. Vestibulum lacus diam, tristique et facilisis ac, euismod eget odio. 
-            Vivamus ultrices fermentum urna, quis elementum tortor gravida a. Ut placerat ligula 
-            ut erat consectetur interdum. Phasellus tristique vitae felis et vestibulum. Nullam 
-            semper, ante ut vulputate laoreet, diam sapien rhoncus libero, sed dapibus ante sem 
-            non mauris. Fusce pharetra, nisi nec vestibulum ultricies, tortor neque condimentum.
+            Primeiro é necessário fazer o login no site. Se você ainda não é
+            cadastrado, entre na página de login, no menu "Entrar" e selecione a
+            opção de registrar-se. Após isso, você poderá fazer o login e entrar
+            na página de cadastros de campanhas, serviços ou voluntariado.
           </p>
         </div>
       </div>
       <div class="row">
         <div class="col-md-6">
-          <h4>Exemplo</h4>
           <p class="text-muted">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fermentum sit 
-            amet odio sed facilisis. Aliquam ipsum leo, porttitor eget feugiat vitae, molestie 
-            in lorem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur 
-            ridiculus mus. Vestibulum lacus diam, tristique et facilisis ac, euismod eget odio. 
-            Vivamus ultrices fermentum urna, quis elementum tortor gravida a. Ut placerat ligula 
-            ut erat consectetur interdum. Phasellus tristique vitae felis et vestibulum. Nullam 
-            semper, ante ut vulputate laoreet, diam sapien rhoncus libero, sed dapibus ante sem 
-            non mauris. Fusce pharetra, nisi nec vestibulum ultricies, tortor neque condimentum.
+            Então é necessário escolher qual tipo de cadastro você deseja fazer.
+            Existem as seguintes opções: <br />
+            <br />
+            • <b>Campanhas</b> : Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Ut sit amet purus eu leo tincidunt placerat non
+            quis turpis. <br />
+            • <b>Serviços</b> : Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Ut sit amet purus eu leo tincidunt placerat non
+            quis turpis. <br />
+            • <b>Voluntariado</b> : Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Ut sit amet purus eu leo tincidunt placerat non
+            quis turpis.
           </p>
         </div>
         <div class="col-md-6 how-img">
-          <img
-            src="../assets/gel.png"
-            class="rounded-circle img-fluid"
-            alt=""
-          />
+          <img src="../assets/2.png" class="rounded-circle img-fluid" alt="" />
         </div>
       </div>
       <div class="row">
         <div class="col-md-6 how-img">
-          <img
-            src="../assets/mascara.png"
-            class="rounded-circle img-fluid"
-            alt=""
-          />
+          <img src="../assets/3.png" class="rounded-circle img-fluid" alt="" />
         </div>
         <div class="col-md-6">
-          <h4>Exemplo</h4>
           <p class="text-muted">
-           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fermentum sit 
-            amet odio sed facilisis. Aliquam ipsum leo, porttitor eget feugiat vitae, molestie 
-            in lorem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur 
-            ridiculus mus. Vestibulum lacus diam, tristique et facilisis ac, euismod eget odio. 
-            Vivamus ultrices fermentum urna, quis elementum tortor gravida a. Ut placerat ligula 
-            ut erat consectetur interdum. Phasellus tristique vitae felis et vestibulum. Nullam 
-            semper, ante ut vulputate laoreet, diam sapien rhoncus libero, sed dapibus ante sem 
-            non mauris. Fusce pharetra, nisi nec vestibulum ultricies, tortor neque condimentum.
+            Por fim, as suas informações serão revisadas por um administrados. 
+            Se o cadastro estiver correto, será publicado no nosso site, 
+            disponibilizando as informações para outros usuários.
+            Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Ut sit amet purus eu leo tincidunt placerat non
+            quis turpis.
           </p>
         </div>
       </div>
