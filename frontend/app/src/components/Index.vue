@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row d-flex justify-content-center">
       <div class="col-lg-4 col-sm-10 mb-4 text-center">
-        <div class="card mb-4 card h-90 shadow-sm">
+        <div class="card mb-4 card h-100 shadow-sm">
           <div class="card-header">
             <h4 class="my-0 font-weight-normal" id="title">Como me cadastrar</h4>
           </div>
@@ -28,7 +28,7 @@
         </div>
       </div>
       <div class="col-lg-4 col-sm-10 mb-4 text-center">
-        <div class="card mb-4 card h-90 shadow-sm">
+        <div class="card mb-4 card h-100 shadow-sm">
           <div class="card-header">
             <h4 class="my-0 font-weight-normal" id="title">Como posso participar</h4>
           </div>
@@ -47,7 +47,7 @@
         </div>
       </div>
       <div class="col-lg-4 col-sm-10 mb-4 text-center">
-        <div class="card mb-4 card h-90 shadow-sm">
+        <div class="card mb-4 card h-100 shadow-sm">
           <div class="card-header">
             <h4 class="my-0 font-weight-normal" id="title">Cuidados na pandemia</h4>
           </div>
