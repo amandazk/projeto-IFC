@@ -28,15 +28,15 @@
             Então é necessário escolher qual tipo de cadastro você deseja fazer.
             Existem as seguintes opções: <br />
             <br />
-            • <b>Campanhas</b> : Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit. Ut sit amet purus eu leo tincidunt placerat non
-            quis turpis. <br />
-            • <b>Serviços</b> : Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit. Ut sit amet purus eu leo tincidunt placerat non
-            quis turpis. <br />
-            • <b>Voluntariado</b> : Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit. Ut sit amet purus eu leo tincidunt placerat non
-            quis turpis.
+            • <b>Campanhas</b> : Campanhas solidárias que visam ajudar a 
+            comunidade. Podem ser cadastradas campanhas de financiamento
+            online ou campanhas com eventos. <br />
+            • <b>Serviços</b> : Pessoas que querem anunciar seus serviços, 
+            como trabalhos de mão de obra, artesanatos ou produtos produzidos
+            pela comunidade. <br />
+            • <b>Voluntariado</b> : Pessoas que desejam oferecer a sua ajuda e
+            seu trabalho. Poderão ser contatadas por campanhas ou pessoas que
+            precisam de ajuda.
           </p>
         </div>
         <div class="col-md-6 how-img">
@@ -49,12 +49,11 @@
         </div>
         <div class="col-md-6">
           <p class="text-muted">
-            Por fim, as suas informações serão revisadas por um administrados. 
-            Se o cadastro estiver correto, será publicado no nosso site, 
+            Por fim, as suas informações serão revisadas pelo portal. 
+            Se o cadastro pessoal e da campanha/ serviço / voluntariado 
+            estiverem corretos, será publicado no nosso site, 
             disponibilizando as informações para outros usuários.
-            Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit. Ut sit amet purus eu leo tincidunt placerat non
-            quis turpis.
+            Dessa maneira conectando as partes interessadas.
           </p>
         </div>
       </div>
