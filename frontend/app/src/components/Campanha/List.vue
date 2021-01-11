@@ -8,7 +8,7 @@
             <th scope="col">Campanha</th>
             <th scope="col">Data Início</th>
             <th scope="col">Data Fim</th>
-            <th scope="col">Link</th>
+            <th scope="col">Links</th>
           </tr>
         </thead>
         <tbody>
@@ -16,7 +16,7 @@
             <td>{{ campanha.titulo_campanha }}</td>
             <td>{{ campanha.dt_inicio_campanha }}</td>
             <td>{{ campanha.dt_fim_campanha }}</td>
-            <td><a href="/campanhaListUni">Link</a></td>
+            <td><a href="/campanhaListUni">Acessar</a></td>
           </tr>
         </tbody>
       </table>

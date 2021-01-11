@@ -41,7 +41,7 @@ export default {
   },
   methods: {
     getCampanha() {
-      axios.get("api/campanhas").then((res) => {
+      axios.get(`api/campanhas`).then((res) => {
         // console.log(res.data);
         this.campanhas = res.data;
       });
