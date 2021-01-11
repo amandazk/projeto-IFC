@@ -18,6 +18,30 @@
           </p>
 
           <p>
+            <label for="username"></label>
+            <input
+              placeholder="Nome Usuário"
+              type="text"
+              id="username"
+              v-model="pessoa.username"
+              class="fadeIn second"
+              name="cadastro"
+            />
+          </p>
+
+          <p>
+            <label for="password"></label>
+            <input
+              placeholder="Senha"
+              type="password"
+              id="password"
+              v-model="pessoa.password"
+              class="fadeIn second"
+              name="cadastro"
+            />
+          </p>
+
+          <p>
             <label for="cpf"></label>
             <input
               placeholder="CPF"
