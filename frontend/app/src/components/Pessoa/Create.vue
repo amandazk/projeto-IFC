@@ -6,8 +6,9 @@
 
         <form>
           <p>
-            <label for="nome">Nome</label>
+            <label for="nome"></label>
             <input
+              placeholder="Nome"
               type="text"
               id="nome"
               v-model="pessoa.nome_pessoa"
@@ -17,8 +18,9 @@
           </p>
 
           <p>
-            <label for="cpf">CPF</label>
+            <label for="cpf"></label>
             <input
+              placeholder="CPF"
               type="text"
               id="cpf"
               v-model="pessoa.cpf_pessoa"
@@ -28,8 +30,9 @@
           </p>
 
           <p>
-            <label for="email">Email</label>
+            <label for="email"></label>
             <input
+              placeholder="E-mail"
               type="email"
               id="email"
               v-model="pessoa.email_pessoa"
@@ -39,9 +42,10 @@
           </p>
 
           <p>
-            <label for="nasc">Data de Nascimento</label>
+            <label for="nasc"></label>
             <input
-              type="date"
+              placeholder="Data de Nascimento"
+              type="text"
               id="nasc"
               v-model="pessoa.nasc_pessoa"
               class="fadeIn third"
@@ -50,8 +54,9 @@
           </p>
 
           <p>
-            <label for="fone">Fone</label>
+            <label for="fone"></label>
             <input
+              placeholder="Fone"
               type="tel"
               id="fone"
               v-model="fone.nr_fone"
