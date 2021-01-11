@@ -11,7 +11,7 @@
         class="d-inline-block align-top"
         alt=""
       />
-      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <ul class="navbar-nav mr-auto mt-2 ml-4 mt-lg-0">
         <li class="nav-item">
           <a class="nav-link" style="color: rgba(71, 82, 94, 100)" href="/"
             >Home</a

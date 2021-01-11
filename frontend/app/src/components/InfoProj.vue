@@ -50,7 +50,7 @@
         <div class="col-md-6">
           <p class="text-muted">
             Por fim, as suas informações serão revisadas pelo portal. 
-            Se o cadastro pessoal e da campanha/ serviço / voluntariado 
+            Se o cadastro pessoal e da campanha/serviço/voluntariado 
             estiverem corretos, será publicado no nosso site, 
             disponibilizando as informações para outros usuários.
             Dessa maneira conectando as partes interessadas.
