@@ -5,6 +5,7 @@ import Index from '../components/Index.vue'
 import InfoProj from '../components/InfoProj.vue'
 import Covid from '../components/Covid.vue'
 import CampanhaList from '../components/Campanha/List.vue'
+import CampanhaListUni from '../components/Campanha/ListUni.vue'
 import DemandaList from '../components/Demanda/List.vue'
 import OfertaList from '../components/Oferta/List.vue'
 import PessoaList from '../components/Pessoa/List.vue'
@@ -38,6 +39,11 @@ export default new VueRouter({
       path: '/campanhas',
       name: 'CampanhaList',
       component: CampanhaList
+    },
+    {
+      path: '/campanhaListUni',
+      name: 'CampanhaListUni',
+      component: CampanhaListUni
     },
     {
       path: '/demandas',
