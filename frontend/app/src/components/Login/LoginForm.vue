@@ -206,7 +206,16 @@ input[type="text"]:focus {
   border-bottom: 2px solid #9bb694;
 }
 
+input[type="password"]:focus {
+  background-color: #fff;
+  border-bottom: 2px solid #9bb694;
+}
+
 input[type="text"]:placeholder {
+  color: #cccccc;
+}
+
+input[type="password"]:placeholder {
   color: #cccccc;
 }
 
