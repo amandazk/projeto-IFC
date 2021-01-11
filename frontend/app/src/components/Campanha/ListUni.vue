@@ -37,12 +37,12 @@ export default {
     };
   },
   mounted() {
-    this.getCampanha();
+    this.getCampanhaId();
   },
   methods: {
-    getCampanha() {
+    getCampanhaId() {
       axios.get(`api/campanhas`).then((res) => {
-        // console.log(res.data);
+        console.log(this.$route.query.test)        
         this.campanhas = res.data;
       });
     },
