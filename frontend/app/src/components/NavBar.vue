@@ -55,7 +55,7 @@
         </a>
         <a class="btn btn-outline-dark my-2 my-sm-0"
           v-else
-          v-on:click="login"
+          
           href="/login"
         >
           Entrar

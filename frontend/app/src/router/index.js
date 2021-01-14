@@ -41,7 +41,7 @@ export default new VueRouter({
       component: CampanhaList
     },
     {
-      path: '/campanhaListUni',
+      path: '/campanhaListUni/:campanha_id',
       name: 'CampanhaListUni',
       component: CampanhaListUni
     },

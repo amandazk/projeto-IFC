@@ -94,7 +94,7 @@
             class="fadeIn fourth"
             style="font-weight: bold"
             value="Cadastrar"
-            v-on:click="addPessoa()"
+            v-on:click.prevent="addPessoa()"
           />
         </form>
       </div>
@@ -149,11 +149,7 @@ export default {
     },
     addPessoa() {
       axios
-        .post("http://localhost:8000/api/pessoas/add/", this.pessoa, {
-          headers: {
-            Authorization: `Token ${this.$session.get("token")}`,
-          },
-        })
+        .post("/api/pessoas/add/", this.pessoa)
         .then((response) => {
           this.dialog = false;
           this.$emit("updatePessoa");
