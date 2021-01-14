@@ -58,6 +58,7 @@ export default {
         await this.login(this.user);
         // this.$router.push( { path: '/' })
       } catch (error) {
+        alert('erro no login')
         console.log("Erro de Login: ", error);
       }
     }

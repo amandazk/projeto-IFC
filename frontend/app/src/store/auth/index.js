@@ -18,17 +18,19 @@ export const auth = {
     },
 
     actions: {
-        login({ commit }, user) {
-            return AuthApi.login(user).then( (user) => {
-                commit('loginSuccess', user)
-                return Promise.resolve(user)
-            }, (error) => {
-                commit('loginFailure')
-                return Promise.reject(error)
+        async login({ commit }, user) {
+            try {
+              const userData = await AuthApi.login(user)
+              console.log(userData)
+              commit('loginSuccess', userData)
+              return Promise.resolve(userData)
+            } catch (error) {
+              commit('loginFailure')
+              return Promise.reject(error)
             }
-            )
-        },
+        }
     },
+    
 
     mutations: {
         loginSuccess(state, user) {
