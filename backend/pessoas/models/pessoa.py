@@ -1,4 +1,5 @@
 from django.db import models
+ from django.contrib.auth.models import User
 
 class Pessoa(models.Model):
     objects = models.Manager() #evitar erro no vscode
@@ -14,6 +15,12 @@ class Pessoa(models.Model):
         'pessoas.Fone',
         related_name='pessoas'
     )
+
+        user = models.OneToOneField(
+        User,
+        on_delete = models.CASCADE
+    )
+
 
     def __str__(self):
         return self.nome_pessoa

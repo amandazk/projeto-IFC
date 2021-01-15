@@ -29,8 +29,6 @@ class PessoaCreate(generics.CreateAPIView):
     serializer_class = PessoaSerializer
     permission_classes = ()
 
-
-
 class PessoaGet(generics.RetrieveAPIView):
     """Listando uma pessoa"""
     queryset = Pessoa.objects.all()

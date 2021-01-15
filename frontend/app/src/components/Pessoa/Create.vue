@@ -156,19 +156,19 @@ export default {
           this.log.console(response);
         });
     },
-    addFone() {
-      axios
-        .post("/api/fones/add/", this.fone, {
-          headers: {
-            Authorization: `Token ${this.$session.get("token")}`,
-          },
-        })
-        .then((response) => {
-          this.dialog = false;
-          this.$emit("updateFone");
-          this.log.console(response);
-        });
-    },
+    // addFone() {
+    //   axios
+    //     .post("/api/fones/add/", this.fone, {
+    //       headers: {
+    //         Authorization: `Token ${this.$session.get("token")}`,
+    //       },
+    //     })
+    //     .then((response) => {
+    //       this.dialog = false;
+    //       this.$emit("updateFone");
+    //       this.log.console(response);
+    //     });
+    // },
   },
 };
 </script>
