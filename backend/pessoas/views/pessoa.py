@@ -15,7 +15,10 @@ class PessoaDestroy(generics.DestroyAPIView):
     queryset = Pessoa.objects.all()
     serializer_class = PessoaSerializer
     permission_classes = ()
+<<<<<<< HEAD
 
+=======
+>>>>>>> 16ac14913355c95f9673586f8697b081a9396cfc
 
 
 class PessoaUpdate(generics.UpdateAPIView):
@@ -23,7 +26,10 @@ class PessoaUpdate(generics.UpdateAPIView):
     queryset = Pessoa.objects.all()
     serializer_class = PessoaSerializer
     permission_classes = ()
+<<<<<<< HEAD
 
+=======
+>>>>>>> 16ac14913355c95f9673586f8697b081a9396cfc
 
 
 class PessoaCreate(generics.CreateAPIView):
