@@ -158,7 +158,7 @@ export default {
     },
     // addFone() {
     //   axios
-    //     .post("http://localhost:8000/api/fones/add/", this.fone, {
+    //     .post("/api/fones/add/", this.fone, {
     //       headers: {
     //         Authorization: `Token ${this.$session.get("token")}`,
     //       },

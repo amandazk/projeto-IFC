@@ -14,28 +14,20 @@ class PessoaDestroy(generics.DestroyAPIView):
     """Excluindo pessoa"""
     queryset = Pessoa.objects.all()
     serializer_class = PessoaSerializer
-    permission_classes = (
-        permissions.IsAdminUser,
-    )
+    permission_classes = ()
 
 
 class PessoaUpdate(generics.UpdateAPIView):
     """Update de pessoa"""
     queryset = Pessoa.objects.all()
     serializer_class = PessoaSerializer
-    permission_classes = (
-        permissions.IsAuthenticated,
-    )
-
+    permission_classes = ()
 
 class PessoaCreate(generics.CreateAPIView):
     """Criando pessoa"""
     queryset = Pessoa.objects.all()
     serializer_class = PessoaSerializer
-    permission_classes = (
-        permissions.DjangoModelPermissions,
-    )
-
+    permission_classes = ()
 
 class PessoaGet(generics.RetrieveAPIView):
     """Listando uma pessoa"""

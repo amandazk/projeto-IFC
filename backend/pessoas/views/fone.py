@@ -14,27 +14,23 @@ class FoneDestroy(generics.DestroyAPIView):
     """Excluindo fone"""
     queryset = Fone.objects.all()
     serializer_class = FoneSerializer
-    permission_classes = (
-        permissions.IsAdminUser,
-    )
+    permission_classes = ()
 
 
 class FoneUpdate(generics.UpdateAPIView):
     """Update de fone"""
     queryset = Fone.objects.all()
     serializer_class = FoneSerializer
-    permission_classes = (
-        permissions.IsAuthenticated,
-    )
+    permission_classes = ()
+
 
 
 class FoneCreate(generics.CreateAPIView):
     """Criando fone"""
     queryset = Fone.objects.all()
     serializer_class = FoneSerializer
-    permission_classes = (
-        permissions.DjangoModelPermissions,
-    )
+    permission_classes = ()
+
 
 
 class FoneGet(generics.RetrieveAPIView):
